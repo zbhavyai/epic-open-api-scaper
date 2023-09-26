@@ -95,6 +95,39 @@ def parseAPISection(interfaceType: str) -> list[dict]:
     }
 
 
+def generateSingleHTML() -> None:
+    savedData = readDataJSON('scrape_results.json')
+
+    html = "<html><body>"
+
+    for item in savedData:
+        interface_heading = item["interfaceHeading"]
+        interface_description = item["interfaceDescription"]
+
+        html += f"<h2>{interface_heading}</h2>"
+        html += f"<p>{interface_description}</p>"
+
+        html += "<ul>"
+
+        for sub_item in item["list"]:
+            sub_heading = sub_item["heading"]
+            sub_description = sub_item["description"]
+            spec_link = sub_item["specLink"]
+
+            if spec_link == "#":
+                html += f"<li><strong>{sub_heading}</strong>: {sub_description}</li>"
+
+            else:
+                html += f"<li><strong><a href='{spec_link}'>{sub_heading}</a></strong>: {sub_description}</li>"
+
+        html += "</ul>"
+
+    html += "</body></html>"
+
+    with open("scrape_results.html", "w") as f:
+        f.write(html)
+
+
 def beginParse() -> None:
     allResults = []
 
@@ -113,11 +146,18 @@ if __name__ == '__main__':
     parser.add_argument('-p', '--parse',
                         action='store_true',
                         help='Parse the data from the website')
+    parser.add_argument('-g', '--generate',
+                        action='store_true',
+                        help='Generate HTML from the parsed data')
     args = parser.parse_args()
 
     if args.parse:
         print('info: begin parsing')
         beginParse()
+
+    elif args.generate:
+        print('info: generating HTML')
+        generateSingleHTML()
 
     else:
         print("eror: no action specified")
