@@ -91,6 +91,7 @@ def parseAPISection(interfaceType: str) -> list[dict]:
     return {
         'interfaceHeading': interfaceHeading,
         'interfaceDescription': interfaceDescription,
+        'interfaceLink': url,
         'list': pageResults,
     }
 
@@ -103,8 +104,9 @@ def generateSingleHTML() -> None:
     for item in savedData:
         interface_heading = item["interfaceHeading"]
         interface_description = item["interfaceDescription"]
+        interface_link = item["interfaceLink"]
 
-        html += f"<h2>{interface_heading}</h2>"
+        html += f"<h2><a href='{interface_link}'>{interface_heading}</a></h2>"
         html += f"<p>{interface_description}</p>"
 
         html += "<ul>"

@@ -2,6 +2,7 @@
   {
     "interfaceHeading": "HL7v2",
     "interfaceDescription": "Health Level 7 standardizes data interchanges within and across organizations. It's one of the most widely implemented standards for health-related data. You can learn more about this standard from  HL7 .",
+    "interfaceLink": "https://open.epic.com/Interface/HL7v2",
     "list": [
       {
         "heading": "Incoming Materials Management",
@@ -493,6 +494,7 @@
   {
     "interfaceHeading": "HL7v3",
     "interfaceDescription": "\"The Version 3 Normative Edition represents a new approach to clinical information exchange based on a model driven methodology that produces messages and electronic documents expressed in XML syntax. The V3 specification is built around subject domains that provide storyboard descriptions, trigger events, interaction designs, domain object models derived from the RIM, hierarchical message descriptors (HMDs) and a prose description of each element.\" -  HL7.org",
+    "interfaceLink": "https://open.epic.com/Interface/HL7v3",
     "list": [
       {
         "heading": "Outgoing Child Protection Information Sharing NHS Query",
@@ -544,6 +546,7 @@
   {
     "interfaceHeading": "IHE Profiles",
     "interfaceDescription": "IHE, or Integrating the Healthcare Enterprise, coordinates the use of many different standards by layering on the context of healthcare delivery. You can learn more from  IHE . Epic maintains a set of IHE Integration statements for these profiles. If you are looking to see which technical options in each profile that Epic supports, see  Epic\u2019s integration statements .",
+    "interfaceLink": "https://open.epic.com/Interface/IHE",
     "list": [
       {
         "heading": "Outgoing Cancer Reporting",
@@ -620,6 +623,7 @@
   {
     "interfaceHeading": "FHIR",
     "interfaceDescription": "FHIR, or Fast Healthcare Interoperability Resources, provides a lightweight REST-based access layer for standard HL7-defined data models. If you're looking for more than specs, check out  FHIR development sandbox  for how you can get client IDs and testing support.",
+    "interfaceLink": "https://open.epic.com/Interface/FHIR",
     "list": [
       {
         "heading": "Account",
@@ -866,6 +870,7 @@
   {
     "interfaceHeading": "Web Services",
     "interfaceDescription": "In some cases, we've found that standards didn't exist, weren't sufficient, or were too complicated technically for our customers' use cases. In those cases, we've developed purpose-built Epic-specific web services to serve those needs. All web services  require a client ID  to identify the calling application as part of the Epic authorization framework. When you are ready to use the web services listed below with an Epic customer, please review  Creating, Activating, and Licensing an App  to create a new client ID. Then  submit an email request  to have these web services added to your app.  You may apply to  Vendor Services  for access to a sandbox or to receive Epic support for these Web Services.",
+    "interfaceLink": "https://open.epic.com/Interface/WebServices",
     "list": [
       {
         "heading": "Encoder Interface API",
@@ -1022,6 +1027,7 @@
   {
     "interfaceHeading": "DICOM",
     "interfaceDescription": "Standards developed by Digital Imaging and Communications  are used internationally for communicating medical images and related information. You can learn more from   DICOM .",
+    "interfaceLink": "https://open.epic.com/Interface/DICOM",
     "list": [
       {
         "heading": "Imaging Integration",
@@ -1058,6 +1064,7 @@
   {
     "interfaceHeading": "NCPDP",
     "interfaceDescription": "The National Council for Prescription Drug Programs develops standards related to the real-time exchange of information about pharmacy services. You can learn more from  NCPDP .",
+    "interfaceLink": "https://open.epic.com/Interface/NCPDP",
     "list": [
       {
         "heading": "Outgoing Medication History for Populations Request and Response",
@@ -1134,6 +1141,7 @@
   {
     "interfaceHeading": "ASC X12",
     "interfaceDescription": "ASC X12 standards are used for facilitating electronic interchange relating to business processes, in both healthcare and other industries. You can learn more from  ASC X12 .",
+    "interfaceLink": "https://open.epic.com/Interface/X12",
     "list": [
       {
         "heading": "Outgoing Referral Inquiry - 278I",
@@ -1365,6 +1373,7 @@
   {
     "interfaceHeading": "Other Integrations",
     "interfaceDescription": "But wait! There's more! We've also created custom integrations using the following approaches.",
+    "interfaceLink": "https://open.epic.com/Interface/Other",
     "list": [
       {
         "heading": "Outgoing Real Time Prescription Benefit Inquiry and Response",
