@@ -10,14 +10,20 @@ The [scaper.py](./scraper.py) script that I wrote scrapes the information from t
 
 ### How to use
 
-1. Scape the information from the EPIC Open API website and dump it in a JSON file
+1. Install dependencies
 
-```bash
-./scraper.py --parse
-```
+   ```bash
+   pip install --requirement requirements.txt
+   ```
 
-2. Read the JSON file and dump the information in an HTML file
+2. Scape the information from the EPIC Open API website and dump it in a JSON file
 
-```bash
-./scraper.py --generate
-```
+   ```bash
+   ./scraper.py --parse
+   ```
+
+3. Read the JSON file and dump the information in an HTML file
+
+   ```bash
+   ./scraper.py --generate
+   ```
