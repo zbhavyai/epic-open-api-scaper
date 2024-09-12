@@ -27,3 +27,18 @@ The [scaper.py](./scraper.py) script that I wrote scrapes the information from t
    ```bash
    ./scraper.py --generate
    ```
+
+### Using docker
+
+1. Build the docker image
+
+   ```bash
+   docker build --tag epic-open-api-scraper .
+   ```
+
+2. Run the docker container
+
+   ```bash
+   docker container run --volume $(pwd):/app --rm --name epic-open-api-scraper epic-open-api-scraper --parse
+   docker container run --volume $(pwd):/app --rm --name epic-open-api-scraper epic-open-api-scraper --generate
+   ```
