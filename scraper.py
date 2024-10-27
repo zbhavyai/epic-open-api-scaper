@@ -7,6 +7,7 @@ Description: Scrapes the website "https://open.epic.com/" for all set of APIs
 
 import argparse
 import json
+import os
 
 import requests
 from bs4 import BeautifulSoup
@@ -24,13 +25,21 @@ def getHTMLContent(url: str) -> str:
 
 def readDataJSON(filename: str) -> list[dict]:
     """Reads the data from a JSON file."""
-    with open(filename, "r") as infile:
+    target_folder = "output"
+    os.makedirs(target_folder, exist_ok=True)
+    target_path = os.path.join(target_folder, filename)
+
+    with open(target_path, "r") as infile:
         return json.load(infile)
 
 
 def storeDataJSON(allResults: list[dict], filename: str) -> None:
     """Stores the data in a JSON file."""
-    with open(filename, "w") as outfile:
+    target_folder = "output"
+    os.makedirs(target_folder, exist_ok=True)
+    target_path = os.path.join(target_folder, filename)
+
+    with open(target_path, "w") as outfile:
         json.dump(allResults, outfile, indent=2)
 
 
@@ -141,7 +150,7 @@ def generateSingleHTML() -> None:
 
     html += "</body></html>"
 
-    with open("scrape_results.html", "w") as f:
+    with open("output/scrape_results.html", "w") as f:
         f.write(html)
 
 

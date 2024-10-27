@@ -33,12 +33,12 @@ The [scaper.py](./scraper.py) script that I wrote scrapes the information from t
 1. Build the docker image
 
    ```bash
-   docker build --tag epic-open-api-scraper .
+   docker build --tag epic-open-api-scraper:1.0.0 .
    ```
 
 2. Run the docker container
 
    ```bash
-   docker container run --volume $(pwd):/app --rm --name epic-open-api-scraper epic-open-api-scraper --parse
-   docker container run --volume $(pwd):/app --rm --name epic-open-api-scraper epic-open-api-scraper --generate
+   docker container run --volume $(pwd):/app/output --rm epic-open-api-scraper:1.0.0 --parse
+   docker container run --volume $(pwd):/app/output --rm epic-open-api-scraper:1.0.0 --generate
    ```
