@@ -70,15 +70,12 @@ def parseAPISection(interfaceType: str) -> dict:
     interfaceList = soup.find("div", class_="interface-list interface-list-content")
 
     interfaceHeading = interfaceList.find("h2").text.strip()
-    interfaceDescription = (
-        interfaceList.find("div", class_="mainSection").get_text(separator=" ").strip()
-    )
+    interfaceDescription = interfaceList.find("div", class_="mainSection").get_text(separator=" ").strip()
 
     for h3, div in zip(
         interfaceList.find_all("h3", class_="interface-title"),
         interfaceList.find_all("div", class_="subSection"),
     ):
-
         try:
             # get the API document link first
             specLinkText = ""
@@ -93,11 +90,7 @@ def parseAPISection(interfaceType: str) -> dict:
             heading = h3.text.replace(specLinkText, "").strip()
 
             # get the description
-            description = (
-                div.find("div", class_="html-description")
-                .get_text(separator=" ")
-                .strip()
-            )
+            description = div.find("div", class_="html-description").get_text(separator=" ").strip()
 
             newData = {
                 "heading": heading,
@@ -167,12 +160,8 @@ def beginParse() -> None:
 
 if __name__ == "__main__":
     """Driver code"""
-    parser = argparse.ArgumentParser(
-        description="Scrape https://open.epic.com/ for all set of APIs"
-    )
-    parser.add_argument(
-        "-p", "--parse", action="store_true", help="Parse the data from the website"
-    )
+    parser = argparse.ArgumentParser(description="Scrape https://open.epic.com/ for all set of APIs")
+    parser.add_argument("-p", "--parse", action="store_true", help="Parse the data from the website")
     parser.add_argument(
         "-g",
         "--generate",

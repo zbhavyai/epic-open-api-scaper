@@ -13,19 +13,19 @@ The [scaper.py](./scraper.py) script that I wrote scrapes the information from t
 1. Install dependencies
 
    ```bash
-   pip install --requirement requirements.txt
+   make init
    ```
 
 2. Scape the information from the EPIC Open API website and dump it in a JSON file
 
    ```bash
-   ./scraper.py --parse
+   make parse
    ```
 
 3. Read the JSON file and dump the information in an HTML file
 
    ```bash
-   ./scraper.py --generate
+   make html
    ```
 
 ### Using docker
