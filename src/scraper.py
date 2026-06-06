@@ -2,191 +2,55 @@
 
 """
 Author: Bhavyai Gupta
-Description: Scrapes the website "https://open.epic.com/" for all set of APIs
+Description: CLI entrypoint to scrape the website "https://open.epic.com/Interface/" for all set of APIs
 """
 
-import argparse
-import json
 from pathlib import Path
 
-import requests
-from bs4 import BeautifulSoup
+import click
+
+from parser import beginParse, generateSingleHTML
+from utils import configure_logging
 
 
-def getBaseURL() -> str:
-    return "https://open.epic.com"
+@click.group()
+def cli() -> None:
+    """Scrape https://open.epic.com/Interface/ for all set of APIs."""
+    configure_logging()
 
 
-def getHTMLContent(url: str) -> str:
-    """Returns the page content for the given URL."""
-    response = requests.get(url)
-    return response.text
+@cli.command()
+@click.option(
+    "-o",
+    "--output",
+    type=click.Path(writable=True, path_type=Path),
+    default=Path("output/scrape_results.json"),
+    help="Path to save output JSON.",
+)
+def parse(output: Path) -> None:
+    """Parse the data from the website."""
+    beginParse(output)
 
 
-def readDataJSON(filename: str) -> list[dict]:
-    """Reads the data from a JSON file."""
-    target_folder = Path("output")
-    target_folder.mkdir(parents=True, exist_ok=True)
-    target_path = target_folder / filename
-
-    with target_path.open() as infile:
-        return json.load(infile)
-
-
-def storeDataJSON(allResults: list[dict], filename: str) -> None:
-    """Stores the data in a JSON file."""
-    target_folder = Path("output")
-    target_folder.mkdir(parents=True, exist_ok=True)
-    target_path = target_folder / filename
-
-    with target_path.open("w") as outfile:
-        json.dump(allResults, outfile, indent=2)
-
-
-def getAllInterfaceTypes() -> list[str]:
-    return [
-        "HL7v2",
-        "HL7v3",
-        "IHE",
-        "FHIR",
-        "WebServices",
-        "DICOM",
-        "NCPDP",
-        "X12",
-        "Other",
-    ]
-
-
-def parseAPISection(interfaceType: str) -> dict:
-    url = f"{getBaseURL()}/Interface/{interfaceType}"
-    content = getHTMLContent(url)
-    soup = BeautifulSoup(content, "html.parser")
-
-    pageResults = []
-    interfaceHeading = ""
-    interfaceDescription = ""
-
-    # get the list of interfaces
-    interfaceList = soup.find("div", class_="interface-list interface-list-content")
-    if interfaceList is None:
-        raise ValueError(f"Could not find interface-list container for {interfaceType}")
-
-    h2_tag = interfaceList.find("h2")
-    if h2_tag is None:
-        raise ValueError("Could not find h2 heading under interface list")
-    interfaceHeading = h2_tag.text.strip()
-
-    main_section = interfaceList.find("div", class_="mainSection")
-    if main_section is None:
-        raise ValueError("Could not find mainSection under interface list")
-    interfaceDescription = main_section.get_text(separator=" ").strip()
-
-    for h3, div in zip(
-        interfaceList.find_all("h3", class_="interface-title"),
-        interfaceList.find_all("div", class_="subSection"),
-    ):
-        try:
-            # get the API document link first
-            specLinkText = ""
-            specLink = "#"
-            anchor = h3.find("a")
-            if anchor:
-                specRelativeLink = anchor.get("href")
-                specLink = f"{getBaseURL()}/{specRelativeLink}"
-                specLinkText = anchor.text.strip()
-
-            # prepare the heading
-            heading = h3.text.replace(specLinkText, "").strip()
-
-            # get the description
-            desc_tag = div.find("div", class_="html-description")
-            description = desc_tag.get_text(separator=" ").strip() if desc_tag else ""
-
-            newData = {
-                "heading": heading,
-                "description": description,
-                "specLink": specLink,
-            }
-
-            pageResults.append(newData)
-
-        except Exception as e:
-            print("eror: parsing API interface: ", h3.text.strip())
-            print(e)
-            continue
-
-    return {
-        "interfaceHeading": interfaceHeading,
-        "interfaceDescription": interfaceDescription,
-        "interfaceLink": url,
-        "list": pageResults,
-    }
-
-
-def generateSingleHTML() -> None:
-    savedData = readDataJSON("scrape_results.json")
-
-    html = "<html><body>"
-
-    for item in savedData:
-        interface_heading = item["interfaceHeading"]
-        interface_description = item["interfaceDescription"]
-        interface_link = item["interfaceLink"]
-
-        html += f"<h2><a href='{interface_link}'>{interface_heading}</a></h2>"
-        html += f"<p>{interface_description}</p>"
-
-        html += "<ul>"
-
-        for sub_item in item["list"]:
-            sub_heading = sub_item["heading"]
-            sub_description = sub_item["description"]
-            spec_link = sub_item["specLink"]
-
-            if spec_link == "#":
-                html += f"<li><strong>{sub_heading}</strong>: {sub_description}</li>"
-
-            else:
-                html += f"<li><strong><a href='{spec_link}'>{sub_heading}</a></strong>: {sub_description}</li>"
-
-        html += "</ul>"
-
-    html += "</body></html>"
-
-    with Path("output/scrape_results.html").open("w") as f:
-        f.write(html)
-
-
-def beginParse() -> None:
-    allResults = []
-
-    for interfaceType in getAllInterfaceTypes():
-        print("info: parsing data for interface type", interfaceType)
-        allResults.append(parseAPISection(interfaceType))
-
-    print("info: writing data as JSON")
-    storeDataJSON(allResults, "scrape_results.json")
+@cli.command()
+@click.option(
+    "-i",
+    "--input-file",
+    type=click.Path(exists=True, dir_okay=False, path_type=Path),
+    default=Path("output/scrape_results.json"),
+    help="Path to source JSON file.",
+)
+@click.option(
+    "-o",
+    "--output",
+    type=click.Path(writable=True, path_type=Path),
+    default=Path("output/scrape_results.html"),
+    help="Path to save generated HTML.",
+)
+def generate(input_file: Path, output: Path) -> None:
+    """Generate HTML from the parsed data."""
+    generateSingleHTML(input_file, output)
 
 
 if __name__ == "__main__":
-    """Driver code"""
-    parser = argparse.ArgumentParser(description="Scrape https://open.epic.com/ for all set of APIs")
-    parser.add_argument("-p", "--parse", action="store_true", help="Parse the data from the website")
-    parser.add_argument(
-        "-g",
-        "--generate",
-        action="store_true",
-        help="Generate HTML from the parsed data",
-    )
-    args = parser.parse_args()
-
-    if args.parse:
-        print("info: begin parsing")
-        beginParse()
-
-    elif args.generate:
-        print("info: generating HTML")
-        generateSingleHTML()
-
-    else:
-        print("eror: no action specified")
+    cli()

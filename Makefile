@@ -1,4 +1,7 @@
-.PHONY: init update format lint parse html
+.PHONY: init update format lint parse generate
+
+help:
+	@uv run python src/scraper.py --help
 
 init:
 	@ln -sf $(CURDIR)/.hooks/pre-commit.sh .git/hooks/pre-commit
@@ -16,7 +19,7 @@ lint:
 	@uv run mypy --pretty -- src
 
 parse:
-	@uv run python src/scraper.py --parse
+	@uv run python src/scraper.py parse
 
-html:
-	@uv run python src/scraper.py --generate
+generate:
+	@uv run python src/scraper.py generate
