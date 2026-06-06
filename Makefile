@@ -1,4 +1,4 @@
-.PHONY: init update
+.PHONY: init update format lint parse html
 
 init:
 	@ln -sf $(CURDIR)/.hooks/pre-commit.sh .git/hooks/pre-commit
