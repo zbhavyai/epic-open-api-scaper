@@ -2,6 +2,8 @@
 
 A scraper that scrapes APIs from the [Epic Open API website](https://open.epic.com/Interface/). It saves the results to a structured JSON file and generates a clean, minimalist HTML report.
 
+See it live at [https://zbhavyai.github.io/epic-open-api-scaper/](https://zbhavyai.github.io/epic-open-api-scaper/).
+
 ## Features
 
 - **Unified Flow**: A single command runs the parser and immediately generates the HTML report.
