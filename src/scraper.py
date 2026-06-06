@@ -7,7 +7,7 @@ Description: Scrapes the website "https://open.epic.com/" for all set of APIs
 
 import argparse
 import json
-import os
+from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
@@ -25,21 +25,21 @@ def getHTMLContent(url: str) -> str:
 
 def readDataJSON(filename: str) -> list[dict]:
     """Reads the data from a JSON file."""
-    target_folder = "output"
-    os.makedirs(target_folder, exist_ok=True)
-    target_path = os.path.join(target_folder, filename)
+    target_folder = Path("output")
+    target_folder.mkdir(parents=True, exist_ok=True)
+    target_path = target_folder / filename
 
-    with open(target_path, "r") as infile:
+    with target_path.open() as infile:
         return json.load(infile)
 
 
 def storeDataJSON(allResults: list[dict], filename: str) -> None:
     """Stores the data in a JSON file."""
-    target_folder = "output"
-    os.makedirs(target_folder, exist_ok=True)
-    target_path = os.path.join(target_folder, filename)
+    target_folder = Path("output")
+    target_folder.mkdir(parents=True, exist_ok=True)
+    target_path = target_folder / filename
 
-    with open(target_path, "w") as outfile:
+    with target_path.open("w") as outfile:
         json.dump(allResults, outfile, indent=2)
 
 
@@ -68,9 +68,18 @@ def parseAPISection(interfaceType: str) -> dict:
 
     # get the list of interfaces
     interfaceList = soup.find("div", class_="interface-list interface-list-content")
+    if interfaceList is None:
+        raise ValueError(f"Could not find interface-list container for {interfaceType}")
 
-    interfaceHeading = interfaceList.find("h2").text.strip()
-    interfaceDescription = interfaceList.find("div", class_="mainSection").get_text(separator=" ").strip()
+    h2_tag = interfaceList.find("h2")
+    if h2_tag is None:
+        raise ValueError("Could not find h2 heading under interface list")
+    interfaceHeading = h2_tag.text.strip()
+
+    main_section = interfaceList.find("div", class_="mainSection")
+    if main_section is None:
+        raise ValueError("Could not find mainSection under interface list")
+    interfaceDescription = main_section.get_text(separator=" ").strip()
 
     for h3, div in zip(
         interfaceList.find_all("h3", class_="interface-title"),
@@ -90,7 +99,8 @@ def parseAPISection(interfaceType: str) -> dict:
             heading = h3.text.replace(specLinkText, "").strip()
 
             # get the description
-            description = div.find("div", class_="html-description").get_text(separator=" ").strip()
+            desc_tag = div.find("div", class_="html-description")
+            description = desc_tag.get_text(separator=" ").strip() if desc_tag else ""
 
             newData = {
                 "heading": heading,
@@ -143,7 +153,7 @@ def generateSingleHTML() -> None:
 
     html += "</body></html>"
 
-    with open("output/scrape_results.html", "w") as f:
+    with Path("output/scrape_results.html").open("w") as f:
         f.write(html)
 
 
