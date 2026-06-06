@@ -1,6 +1,3 @@
-import shutil
-from pathlib import Path
-
 from bs4 import BeautifulSoup
 
 from utils import (
@@ -96,18 +93,6 @@ def parseAPISection(interfaceType: str) -> dict:
 def generateHTML() -> None:
     logger.info(f"Reading parsed data from {JSON_OUTPUT_PATH}")
     savedData = readDataJSON(JSON_OUTPUT_PATH)
-
-    # Copy external CSS to output directory
-    css_src = Path(__file__).parent / "style.css"
-    css_dest = HTML_OUTPUT_PATH.parent / "style.css"
-    logger.info(f"Copying CSS from {css_src} to {css_dest}")
-    shutil.copy(css_src, css_dest)
-
-    # Copy external JS to output directory
-    js_src = Path(__file__).parent / "script.js"
-    js_dest = HTML_OUTPUT_PATH.parent / "script.js"
-    logger.info(f"Copying JS from {js_src} to {js_dest}")
-    shutil.copy(js_src, js_dest)
 
     sections_info = []
     for item in savedData:
