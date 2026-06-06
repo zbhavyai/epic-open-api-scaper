@@ -13,8 +13,8 @@ DEFAULT_HEADERS = {
     )
 }
 
-JSON_OUTPUT_PATH = Path("output/scrape_results.json")
-HTML_OUTPUT_PATH = Path("output/scrape_results.html")
+JSON_OUTPUT_PATH = Path("docs/index.json")
+HTML_OUTPUT_PATH = Path("docs/index.html")
 
 SESSION = requests.Session()
 SESSION.headers.update(DEFAULT_HEADERS)

@@ -24,4 +24,4 @@ A scraper that scrapes APIs from the [Epic Open API website](https://open.epic.c
    make run
    ```
 
-3. The HTML report is generated at [output/scrape_results.html](output/scrape_results.html)
+3. The HTML report is generated at [docs/index.html](docs/index.html)
