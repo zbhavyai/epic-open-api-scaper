@@ -20,7 +20,7 @@ logger = logging.getLogger("scraper")
 
 
 def configure_logging() -> None:
-    log_file_path = Path("output/scraper.log")
+    log_file_path = Path("logs/scraper.log")
     log_file_path.parent.mkdir(parents=True, exist_ok=True)
 
     handlers: list[logging.Handler] = [
