@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.14"
 license = "MIT"
 license-files = ["LICENSE"]
-dependencies = ["requests", "beautifulsoup4"]
+dependencies = ["requests", "beautifulsoup4", "click"]
 
 [dependency-groups]
 dev = ["ruff", "mypy"]

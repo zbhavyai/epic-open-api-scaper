@@ -2,7 +2,7 @@
 
 ### About
 
-EPIC System has a documentation of their APIs at [https://open.epic.com/](https://open.epic.com/). These set of APIs are grouped together via `Category` and via the `Standard`.
+EPIC System has a documentation of their APIs at [https://open.epic.com/Interface/]https://open.epic.com/Interface/). These set of APIs are grouped together via `Category` and via the `Standard`.
 
 When given a task about getting information about all those APIs (categorized by `Standard`) in a single document for a quick reference, I decided to write a scraper to get all the information and put it in a single document. Manually copying and pasting the information in a Google document caused a lot of formatting issues and it was not a good use of my time.
 
