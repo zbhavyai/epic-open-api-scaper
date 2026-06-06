@@ -1,44 +1,27 @@
-# EPIC Open API Scraper
+# Epic Open API Scraper
 
-### About
+A scraper that scrapes APIs from the [Epic Open API website](https://open.epic.com/Interface/). It saves the results to a structured JSON file and generates a clean, minimalist HTML report.
 
-EPIC System has a documentation of their APIs at [https://open.epic.com/Interface/]https://open.epic.com/Interface/). These set of APIs are grouped together via `Category` and via the `Standard`.
+## Features
 
-When given a task about getting information about all those APIs (categorized by `Standard`) in a single document for a quick reference, I decided to write a scraper to get all the information and put it in a single document. Manually copying and pasting the information in a Google document caused a lot of formatting issues and it was not a good use of my time.
+- **Unified Flow**: A single command runs the parser and immediately generates the HTML report.
+- **Centralized Configuration**: All outputs and network settings are centralized in a single configuration file.
+- **Modular Design**: Separates the scraper CLI, parser/HTML generator, and shared utilities.
+- **Quality Ensured**: Codebase is fully formatted with `ruff` and type-checked with `mypy`.
+- **Logs**: Execution logs are written to `logs/scraper.log`.
 
-The [scaper.py](./scraper.py) script that I wrote scrapes the information from the EPIC Open API website and dumps the API information in a JSON file. Then the same script reads the very JSON file and put in an HTML file, without any additional CSS. This makes the content easy to copy and paste in a Google document.
-
-### How to use
+## Quick Start
 
 1. Install dependencies
 
-   ```bash
+   ```shell
    make init
    ```
 
-2. Scape the information from the EPIC Open API website and dump it in a JSON file
+2. Run the scraper
 
-   ```bash
-   make parse
+   ```shell
+   make run
    ```
 
-3. Read the JSON file and dump the information in an HTML file
-
-   ```bash
-   make html
-   ```
-
-### Using docker
-
-1. Build the docker image
-
-   ```bash
-   docker build --tag epic-open-api-scraper:1.0.0 .
-   ```
-
-2. Run the docker container
-
-   ```bash
-   docker container run --volume $(pwd):/app/output --rm epic-open-api-scraper:1.0.0 --parse
-   docker container run --volume $(pwd):/app/output --rm epic-open-api-scraper:1.0.0 --generate
-   ```
+3. The HTML report is generated at [output/scrape_results.html](output/scrape_results.html)
