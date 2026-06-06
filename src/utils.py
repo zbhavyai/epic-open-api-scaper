@@ -13,7 +13,7 @@ DEFAULT_HEADERS = {
     )
 }
 
-JSON_OUTPUT_PATH = Path("docs/index.json")
+JSON_OUTPUT_PATH = Path("docs/data.json")
 HTML_OUTPUT_PATH = Path("docs/index.html")
 
 SESSION = requests.Session()
