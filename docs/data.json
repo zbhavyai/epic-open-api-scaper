@@ -7,112 +7,112 @@
       {
         "heading": "Incoming Materials Management",
         "description": "Used to automate synchronization of supply definitions from an external materials management system. The interface can add or modify properties of these items such as the supplier they are purchased from and the physical location where they are stored.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5357"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5357"
       },
       {
         "heading": "Incoming External Encounters",
         "description": "Receives data about encounters that happen at an outside entity. These encounters can then be used by care managers to follow up with the patient or by Epic population health tools for analytics.  This interface is for use with Payer Platform or Healthy Planet.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5369"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5369"
       },
       {
         "heading": "Outgoing Fills to Automated Fill System from Willow Ambulatory",
         "description": "Transmits verified pharmacy fills to automated prescription fill systems.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5274"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5274"
       },
       {
         "heading": "Incoming Fill Status Updates and Load/Unload from Automated Fill System",
         "description": "Updates the status of the prescription fill in Willow Ambulatory Pharmacy when an automated prescription fill system fills, dispenses, or cancels a prescription.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5365"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5365"
       },
       {
         "heading": "Outgoing Patient Waiting Time from Patient Administration System",
         "description": "Organizations in Ontario can collect information in diagnostic imaging and surgical workflows to report to Cancer Care Ontario's Wait Time Information System (WTIS) requirements.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5235"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5235"
       },
       {
         "heading": "Outgoing Inventory Depletion",
         "description": "Informs an external materials management system of supplies that have been using during a procedure. It indicates which supply was used, from where the user picked the supply, and the number by which the external system should decrement the balance of the supply.  These messages are triggered from within Epic's surgical, radiology, and cardiology software applications.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5262"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5262"
       },
       {
         "heading": "Outgoing Blood Transfusion Status Notification",
         "description": "Sends transfusion notifications to external Blood Bank systems so that blood banks can update their records when a given blood unit is transfused. To use this interface, an organization must document the unit number and product code for blood transfusions using the Blood Product Administration Module.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5292"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5292"
       },
       {
         "heading": "Incoming External Outpatient Medication Orders Interface",
         "description": "Receives outpatient medication orders from outside sources such as other EHR systems.   They are not filed directly to the chart, but instead are filed as a medication waiting to be reconciled in the Reconcile Outside Information activity.  This interface is generally used for conversion purposes, and is recommended in place of the Incoming Medication Orders to EpicCare Ambulatory interface.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5368"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5368"
       },
       {
         "heading": "Incoming Asynchronous Acknowledgement",
         "description": "Receives asynchronous application acknowledgements in response to any outgoing HL7v2 message sent using Bridges, Epic's core messaging infrastructure.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5383"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5383"
       },
       {
         "heading": "Outgoing Documentation",
         "description": "Notifies external systems of documentation recorded in Epic. Sends MDM messages with notes and transcriptions as they are saved and modified, and can send a document summary upon close of an encounter in EpicCare Ambulatory EHR.  Documents are sent in either RTF or PDF format.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5279"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5279"
       },
       {
         "heading": "Outgoing Provider Communications Interface",
         "description": "Notifies external systems of provider communications written in the Communication Management activity in Epic. The interface sends letter attachments as PDF documents to recipients.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5221"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5221"
       },
       {
         "heading": "Outgoing Medication Verification Queue Update Notification from Willow Inpatient Interface",
         "description": "Informs external systems when an inpatient medication order is added or removed from the pharmacist verification queue.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5250"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5250"
       },
       {
         "heading": "Outgoing External Encounters",
         "description": "Sends HL7v2 ADT messages using data filed as external encounters in Received Documents records and using message data filed on the Incoming External Encounters interface. This is intended for use with Payer Platform.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5276"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5276"
       },
       {
         "heading": "Incoming Provider Communications Interface",
         "description": "Notifies Epic users of provider communications written in other systems.\u00a0\u00a0\u00a0Communications can have attached letters or documents and are routed to the recipient (Provider, Department, etc) based on preferences (In Basket, Fax, Mail, etc)\u00a0the same as if the communication was written in Epic and routed with the Communication Management activity.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5331"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5331"
       },
       {
         "heading": "Outgoing Asynchronous Acknowledgement Interface",
         "description": "Sends asynchronous application acknowledgements in response to any incoming HL7v2 message received in Bridges, Epic's core messaging infrastructure.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5295"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5295"
       },
       {
         "heading": "Incoming External Appointments Interface",
         "description": "Receives HL7v2 scheduling messages about appointments that happen at an outside entity.\u00a0These encounters can then be used by care managers to follow up with the patient or by Epic population health tools for analytics. This interface is different from the Incoming Appointment Scheduling interface in that it does not make appointments that can be acted upon (checked in, canceled, etc) or accessed from the clinical schedule to be charted in.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5371"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5371"
       },
       {
         "heading": "Outgoing External Appointments Interface",
         "description": "Sends HL7v2 scheduling messages using data filed as external appointments and using message data filed on the Incoming External Appointments interface.  This is intended for use with Payer Platform.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=6436"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=6436"
       },
       {
         "heading": "Incoming Provider Information",
         "description": "Receives messages that can create, update, inactivate, or delete records in the provider master file, typically from an external credentialing system. While this interface can build the shell of a provider record, for example, address and contact information, this interface can't completely automate the addition of new providers to an organization because Epic has many settings and features that are built by association to provider records.   These settings cannot by nature be controlled by an external system. There are also use cases requiring provider records to be built that will not be tracked in a credentialing system.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5330"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5330"
       },
       {
         "heading": "Incoming Medication Stock Reservation to Willow Inventory",
         "description": "Reserves medication stock for use at a specific inventory location.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5778"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5778"
       },
       {
         "heading": "Outgoing Provider Information",
         "description": "Sends provider information to an external system whenever a provider record is created, updated, inactivated, or deleted.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5220"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5220"
       },
       {
         "heading": "Outgoing Device Association Interface",
         "description": "IHE PCD Profile standard to associate device record to patient.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=10257"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=10257"
       },
       {
         "heading": "Incoming Drug Supply Receipt to Willow Inventory",
         "description": "Files drug supply items on stock that are received and invoiced on a purchase order in central pharamcy management.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=6420"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=6420"
       },
       {
         "heading": "Outgoing Birth Registry Reporting - Canada",
@@ -122,217 +122,217 @@
       {
         "heading": "Incoming Financial Transactions",
         "description": "Receives financial transactions. It can receive charge and credit transactions for hospital accounts for Epic's Hospital Billing application, and post or void charges on guarantor accounts for Epic's Professional Billing application. These charges are subject to charge entry checks.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5364"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5364"
       },
       {
         "heading": "Incoming Procedural Supply Usage",
         "description": "Updates supply or implant usage information in OpTime (Epic's OR module) or Cupid (Epic's CVIS) procedural logs.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5334"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5334"
       },
       {
         "heading": "Outgoing Results and Orders",
         "description": "You can configure each copy of this interface one of the following ways: This interface can send result messages in the LRI format. LRI format results follow the HL7 version 2.5.1 Implementation Guide: S&I Framework Lab Results Interface, Release 1. It can send both order status and result messages from Beaker to external systems, when Beaker is the reference lab for another LIS or clinical system. This interface can send result messages in the ELR format. ELR format results follow the HL7 version 2.5.1 Implementation Guide: Electronic Laboratory Reporting to Public Health, Release 1. This format is often used to notify public health agencies of tests which must be reported for disease tracking, and meet Meaningful Use (MU) or Promoting Interoperability (PI) measures in the U.S. This interface can send messages for pathology reports that contain electronic cancer checklists. These messages conform to the North American Association of Central Cancer Registries (NAACCR) Standards for Cancer Registries Volume V rules for constructing HL7 messages for CAP electronic cancer checklist synoptic reporting. Use the LRI format unless you have a specific need to use the ELR or NAACCR formatted results.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5211"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5211"
       },
       {
         "heading": "Incoming Surgical Cart Tracking",
         "description": "After a surgical case is created, this interface files the identifier, current location, and transport status of the surgical carts that have been prepared for or assigned to the surgical case.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5319"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5319"
       },
       {
         "heading": "Outgoing Infusion Orders",
         "description": "Sends infusion order details to infusion pump gateways for the purposes of prepopulating infusion parameters on associated infusion pumps. When an infusion order message is sent on the Outgoing Infusion Orders interface, an immediate response is expected back from the infusion pump gateway via the Incoming Verification interface. These are advanced interfaces with a particular set of pre-requisites for successful implementation.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5264"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5264"
       },
       {
         "heading": "Incoming External Push Notifications",
         "description": "Used for receiving alerts that are appropriate for one-way informational notifications that do not need to be acknowledged by the receiving user. See also Incoming Alerts from Alert Manager or Incoming Alerts from Patient Care Devices for other workflows.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=9907"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=9907"
       },
       {
         "heading": "Incoming Patient Education Interface",
         "description": "Integrates Epic's Patient Education activity with a third-party education content management or content delivery system. The interface is used to record whether the patient has completed an educational assignment, and it can also be used to record ad hoc educational activities that were not assigned by the clinician.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5340"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5340"
       },
       {
         "heading": "Outgoing Patient Education Interface",
         "description": "Integrates the Patient Education Activity with a third-party education content management or delivery system. This interface is used to send clinician-initiated education assignments to a third-party system so that the content can be viewed and acted upon there.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5236"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5236"
       },
       {
         "heading": "Incoming Deficiency Tracking",
         "description": "An HIM deficiency represents incomplete work by a provider. Receives and processes messages that can create or delete deficiencies, and update deficiency status and assigned providers. The interface adds external deficiency information in HIM when a deficiency is not automatically created by standard application functionality. This interface is useful if transcriptions are stored in an external system (obviating the need for an Incoming Transcription interface, which can also update deficiency statuses). The deficiency created by the interface can be configured to follow the rules defined in HIM for aging and delinquency or they can be controlled by an external system in a direct fashion. This interface also plays a key role if integrating with an external web-based deficiency system, receiving messages that allow a URL to be launched from the Chart Completion module.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5375"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5375"
       },
       {
         "heading": "Incoming Patient Administration",
         "description": "Receives messages for new or changed demographic information, visits (ADT), registration (guarantors and insurance coverage), allergies, and bed status updates.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5342"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5342"
       },
       {
         "heading": "Incoming Problem List",
         "description": "Used to add, modify, or remove problems from the patient-level problem list. This interface works specifically with the longitudinal problem list, not problems specific to a particular hospitalization. This integration has been implemented only for conversions.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5335"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5335"
       },
       {
         "heading": "Outgoing Problem List",
         "description": "Sends notification of added, modified, or deleted problems from the patient-level problem list in the EHR to an external system. This interface works specifically with the longitudinal problem list, not problems specific to a particular hospitalization.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5223"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5223"
       },
       {
         "heading": "Incoming Clinical Observations",
         "description": "Receives and processes clinical observations (past medical history, smoking history, and so on), that do not fit into other tools. This interface is typically used for filing clinical data for the purposes of a conversion. The Incoming Clinical Documentation Flowsheet interface is recommended if the data will be filed only to a documentation flowsheet.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5378"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5378"
       },
       {
         "heading": "Outgoing Ancillary Orders",
         "description": "Sends orders placed by a clinical user in EpicCare to external ancillary systems - including messages for new orders, order cancellations, and number assignment responses to externally-initiated orders.  Use cases include:  Send physician placed orders to external laboratory, radiology or cardiology systems, when not using Epic equivalent product.  Send orders from Beaker, Epic's LIS, to an external LIS if test needs to be performed at another lab. Send orders to blood bank system from Beaker.  To send orders to both an external lab system (not to Beaker) and an external radiology system (not Radiant, Epic's RIS), two copies of the interface are needed, one for each purpose.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5298"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5298"
       },
       {
         "heading": "Outgoing Medication Administration Notification",
         "description": "Sends medication administration notification when a clinician marks a medication as administered on the MAR. This interface also sends updates regarding prior administrations, and change of status notifications for medications previously marked as administered. It does not send due times for medications that need to be administered in the future. The interface does not send messages when clinicians document the administration of blood products on the MAR or patient-controlled analgesia (PCA) medications on a documentation flowsheet.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5259"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5259"
       },
       {
         "heading": "Outgoing Diet Orders",
         "description": "Sends information about new or canceled diet orders to an external nutrition system. Messages are triggered when diet orders are created or canceled in EpicCare Inpatient EHR.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5280"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5280"
       },
       {
         "heading": "Outgoing Imaging Results and Orders",
         "description": "Sends orders and results from Radiant (Epic's RIS)  or Cupid (Epic's CVIS) to PACS, radiology transcription systems, or other external systems. This is the only interface that sends orders or results from Radiant or Cupid. Messages are triggered for new orders when an order reaches a status of scheduled or arrived, changes to the status of an order, for results, and when the appointment associated with an order is canceled.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5265"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5265"
       },
       {
         "heading": "Incoming Blood Product Matching to BPAM",
         "description": "This interface is included with the Blood Product Administration Module and facilitates matching (positive patient identification with blood) of blood products received from an external blood bank system.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5382"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5382"
       },
       {
         "heading": "Incoming Medication Orders to EpicCare Ambulatory",
         "description": "Receives medication order information from an external ambulatory pharmacy system other than Willow Ambulatory. In the past, this interface was used only by an organization that maintained its own ambulatory pharmacy system and interfaced it with EpicCare Ambulatory EHR.   In its original implementation mode, this interface encodes and cancels orders, tracks and cancels dispenses, and requests the originator of a refill order. However, since external pharmacy systems have now moved to NCPDP/e-prescribing workflows, this interface is no longer implemented in real time, and is sparingly used for certain types of electronic conversions (see Patient Abstractor for preferred method of converting at home medications).  Note that this interface cannot be used to receive medications from an external Hospital Information System and file them for use with Willow Inpatient, nor can it file medication administration information discretely to the electronic MAR.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5349"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5349"
       },
       {
         "heading": "Outgoing Medication Orders from EpicCare Ambulatory",
         "description": "Sends ambulatory medication orders that are placed in Order Entry to an external pharmacy system internal to the organization other than Willow Ambulatory Pharmacy. Messages are triggered as a user orders, discontinues, or reorders a medication.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5253"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5253"
       },
       {
         "heading": "Outgoing Scanned Document Link Maintenance",
         "description": "Sends updated document link keywords to an external document management system (DMS) when key information about where the content is located changes, for example, if a scan that originated in the DMS is moved from one encounter to another by HIM Chart Correction processes.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5210"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5210"
       },
       {
         "heading": "Incoming Results from Lab Instruments",
         "description": "Receives test results from instruments into Beaker, Epic's LIS. This is also the interface to use to receive point of care testing results, such as from docked glucometer systems, into Beaker.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=8000"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=8000"
       },
       {
         "heading": "Outgoing Orders to Lab Instruments",
         "description": "Sends information about new or canceled laboratory orders from Beaker, Epic's LIS, to an instrument. This is also the interface to use for Point of Care testing with Beaker, for example, docked glucometer systems. It can trigger messages when a new specimen is received, a test is reordered, an add-on test is ordered for a specimen that has already been received, or a test is canceled.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FOutgoing%20Orders%20to%20Lab%20Instruments%20Interface%20Technical%20Specification.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FOutgoing%20Orders%20to%20Lab%20Instruments%20Interface%20Technical%20Specification.pdf"
       },
       {
         "heading": "Incoming Orders from CPOE Systems",
         "description": "Receives orders from external ordering systems. The interface can create, update, or cancel orders. Common use cases are routing lab orders to Beaker (Epic's LIS), radiology orders to Radiant (Epic's RIS), or cardiology orders to Cupid (Epic's CVIS).  Some integrations may additionally require either an Incoming Patient Administration interface to create or update patient records or an incoming query to look up patient information before sending the order message.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FIncoming%20Orders%20from%20CPOE%20Systems%20Interface%20Technical%20Specification.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FIncoming%20Orders%20from%20CPOE%20Systems%20Interface%20Technical%20Specification.pdf"
       },
       {
         "heading": "Incoming Medication Dispenses and Load/Unload from ADS to Willow Inpatient",
         "description": "Processes dispense, return, and waste information from medication cabinet systems (automated dispense systems), dispensing workflow engines, and robots.  Also processes \"load/unload\" messages received when a drawer, pocket, or bin is emptied or stocked.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5354"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5354"
       },
       {
         "heading": "Outgoing Verified Medication Orders from Willow Inpatient",
         "description": "Sends verified pharmacy orders. This interface is typically used with cabinet, robotic, TPN, or carousel dispensing systems. It is sometimes used to transmit medication orders to an external medical record or surgery system. Messages are triggered from Willow Inpatinet Pharmacy when a user verifies, re-verifies, discontinues, or modifies an order, reverses a discharge, changes a patient's location such that the dispense location changes, or loads a medication into a station that did not previously contain that medication. We recommend one interface for cabinets and a separate interface for robotic dispensing systems, since the requirements for message content varies between systems, as the robot is dispensing multiple doses of a given medication for a cart, whereas the cabinet order will be dispensed by a user.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5200"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5200"
       },
       {
         "heading": "Outgoing Patient Administration",
         "description": "Informs external systems of new patient creation, changes to patient demographic information, visits (ADT), registration (guarantors and insurance coverage), allergies, and bed status updates. These messages are triggered from many of Epic's applications. The ability to send allergy updates is only available from the Allergy activity. This interface does not send final coded diagnoses, procedures, or DRGs after a hospital account is coded.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5238"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5238"
       },
       {
         "heading": "Outgoing Formulary Information to ADS from Willow Inpatient Interface",
         "description": "Also known as ADS Console Management. The interface can be used to populate the master medication list of an automated dispense system when a medication is added or removed from the Willow Inpatient Pharmacy formulary.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5270"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5270"
       },
       {
         "heading": "Incoming EOB Scanning",
         "description": "Receives messages that notify the billing applications (Resolute Hospital, Professional, Home Health (Dorothy), or Enterprise Billing) that a scanned explanation of benefits document exists. Receiving a message opens a new payment batch in the appropriate billing application based on scan type.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5372"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5372"
       },
       {
         "heading": "Incoming Device Data",
         "description": "Receives discrete measurements from patient monitoring and documentation devices. The messages file to the application, where the data can be validated by the user and added to the chart, or in the case of surgical procedures, can be set to automatically validate and file to the chart. This type of integration is usually done with device aggregators to file samples from continuous physiological monitoring. It is not  used for consumer-initiated monitoring or home monitoring.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5374"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5374"
       },
       {
         "heading": "Incoming MPI and Demographics Query",
         "description": "Receives and responds to queries for demographic data from an external system when Epic is the EMPI. Does not modify patient data.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FIncoming%20MPI%20and%20Demographics%20Query%20Interface%20Technical%20Specification.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FIncoming%20MPI%20and%20Demographics%20Query%20Interface%20Technical%20Specification.pdf"
       },
       {
         "heading": "Incoming Personnel Management",
         "description": "Receives messages from an external user management system to create, update, or delete user records in Epic. While this interface can build the shell of a user record and associate role based information, this interface can't completely automate the addition of new users to an organization, because Epic has settings and features built by association to a user record.  These settings cannot be controlled by an external system. We recommend you use the  Personnel Management web services  rather than this HL7v2 interface as it offers significantly greater capabilities.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FIncoming%20Personnel%20Management%20Interface%20Technical%20Specification.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FIncoming%20Personnel%20Management%20Interface%20Technical%20Specification.pdf"
       },
       {
         "heading": "Incoming Location and Department Information",
         "description": "Used to automate synchronization of the facility structure (locations and departments). To this point, this integration has been completed only with custom in-house systems previously developed by our organizations.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FIncoming%20Location%20and%20Department%20Information%20Interface%20Technical%20Specification.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FIncoming%20Location%20and%20Department%20Information%20Interface%20Technical%20Specification.pdf"
       },
       {
         "heading": "Outgoing MPI and Demographics Query",
         "description": "Queries an external EMPI during a patient search after a local search is performed. The correct patient is then selected by a user from a list of candidates returned in the response message.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5249"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5249"
       },
       {
         "heading": "Outgoing Claim Scrubber Query",
         "description": "Claim Scrubbing functionality integrated into various workflows in Resolute, Epic's billing system.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FOutgoing%20Claim%20Scrubber%20Query%20Interface%20Technical%20Specification.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FOutgoing%20Claim%20Scrubber%20Query%20Interface%20Technical%20Specification.pdf"
       },
       {
         "heading": "Outgoing Address Verification Query",
         "description": "Queries a third-party system to verify and validate patient-level and guarantor-level demographic data the time of registration. This interface works with Prelude, Epic's registration system.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FOutgoing%20Address%20Verification%20Query%20Interface%20Technical%20Specification.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FOutgoing%20Address%20Verification%20Query%20Interface%20Technical%20Specification.pdf"
       },
       {
         "heading": "Outgoing Clinical Documentation Flowsheet Data",
         "description": "Sends discrete documentation flowsheet data to another system.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5286"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5286"
       },
       {
         "heading": "Incoming Appointment Scheduling",
         "description": "Receives scheduling information from external systems to show that information in Epic or provide clinical access to the patient's appointments. It can receive messages for new, rescheduled, updated, or canceled appointments, as well as notifications that a patient did not show for an appointment.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5384"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5384"
       },
       {
         "heading": "Incoming Schedule Query",
         "description": "Receives patient information queries and returns information regarding scheduled appointments.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5322"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5322"
       },
       {
         "heading": "Incoming Clinical Documentation Flowsheet Data",
         "description": "Receives discrete patient data from an external system (where a user has previously validated the data), and files directly to the documentation flowsheet.  This interface can also be used with clinically regulated home monitoring device vendors for post discharge monitoring programs, home care, home hospice, or other types of patient monitoring episodes.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5379"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5379"
       },
       {
         "heading": "Incoming Procedure Log Data",
         "description": "Receives information about cardiac catheterization, electrophysiology and interventional radiology procedures when using the Cupid (CVIS) procedure log for intra-procedure documentation. This information is sent from a hemodynamic product that collects vitals and pressures during the procedure. This interface can file information to flowsheets and free text events such that it appears on the Cupid procedure log. This interface is typically not used if Cupid's procedure log is not in use and the procedure log is being completed in the hemodynamic system.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5333"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5333"
       },
       {
         "heading": "Outgoing Financial Transactions",
         "description": "Sends financial transactions. Typically, the relevant situation for the use of this interface is when clinical services are provided at an organization that is not responsible for the associated revenue.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5273"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5273"
       },
       {
         "heading": "Outgoing Syndromic Data",
         "description": "Follows the PHIN Messaging Guide for Syndromic Surveillance: Emergency Department and Urgent Care Data. Used to meet Meaningful Use Objectives to send Syndromic Surveillance data to Public Health agencies.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5207"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5207"
       },
       {
         "heading": "Outgoing Results Query to Ontario Lab Information System",
@@ -342,107 +342,107 @@
       {
         "heading": "Outgoing Registration to Home Device Data Concentrator",
         "description": "Sends registration information to a device data concentrator system to register patients and devices. This interface would be used instead of the standard Patient Administration interface when collecting data from patient home monitoring devices using an external system.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5215"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5215"
       },
       {
         "heading": "Outgoing Appointment Scheduling",
         "description": "Sends appointment information to external systems. Users can trigger messages for new, rescheduled, updated, no showed, and canceled appointments. To send surgical case schedules, the Outgoing Surgical Case Scheduling interface is required.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5296"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5296"
       },
       {
         "heading": "Coding - Incoming Query and Response",
         "description": "The incoming coding interface supports workflows in which coders are working entirely in your system. Coders in your system send messages to providers using Epic asking for more information to support their documentation (CDI or Coding Query). Responses are sent in return.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5377"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5377"
       },
       {
         "heading": "Incoming Surgical Case Tracking",
         "description": "Receives surgical case event information in real time to populate the event and the event timestamp in a surgical case log.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5318"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5318"
       },
       {
         "heading": "Outgoing Medication Stock Transfer Request and Response",
         "description": "Initiates a fill in a dispensing system-such as robotic arm or carousel-to assist in sending medications from the pharmacy to a hospital floor. This interface also receives acknowledgments from the dispensing system, which updates stock counts in Willow Inventory Management accordingly. For example, if a user requests five bottles of a certain medicine, but only four exist in stock, the interface updates the stock count being sent to the floor to four. Note that the purpose of messages sent by the interface is to request stock for a hospital floor. For that reason, the messages aren't patient-specific.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5251"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5251"
       },
       {
         "heading": "Outgoing Surgical Case Scheduling",
         "description": "Sends case scheduling information to external systems. Messages are sent for new, rescheduled, updated, and canceled cases.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5208"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5208"
       },
       {
         "heading": "Outgoing OCIO Medication Orders from EpicCare Ambulatory",
         "description": "Sends outpatient and discharge medication orders to a pharmacy information system. This interface supports a subset of HL7 version 2.4 according to the specifications defined in the Clinical System Medication Management Interface Specification version 10.1 published by the Office of Chief Information (OCIO) of Victoria in Australia.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5247"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5247"
       },
       {
         "heading": "Incoming Medication Inventory Management",
         "description": "Updates medication stocks in Willow Inventory, Epic's medication inventory management system, with changes for an externally managed inventory location.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5353"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5353"
       },
       {
         "heading": "Outgoing Medication Inventory Depletion",
         "description": "Communicates changes in medication stock in Willow Inventory medication inventory management for an external inventory location.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5255"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5255"
       },
       {
         "heading": "Incoming Surgical Resource Data",
         "description": "Used to automate synchronization of surgical instrument records, implant groups, or trays from an external system.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FIncoming%20Surgical%20Instrument%20Data%20Interface%20Technical%20Specification.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FIncoming%20Surgical%20Instrument%20Data%20Interface%20Technical%20Specification.pdf"
       },
       {
         "heading": "Incoming Infusion Documentation",
         "description": "Receives discrete measurements from an infusion pump gateway associated with the administration of an infusion order. This is an advanced interface with a particular set of prerequisites for successful implementation.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5363"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5363"
       },
       {
         "heading": "Incoming Alerts from Alert Manager and Alert Reporting from Patient Care Devices",
         "description": "This collection of interfaces receives alert messages to send push notifications to end users. Upon receiving, reading, or responding to an alert, response messages are sent back to the alert manager. They can also store technical and physiological alert data from patient care devices such as physiological monitors and infusion pumps.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=9755"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=9755"
       },
       {
         "heading": "Incoming Medication Administration Notification",
         "description": "Files administration information to a medication order created and acted on in an external system. The read-only orders appear on the MAR for reference.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5355"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5355"
       },
       {
         "heading": "Incoming Prescriptions from Legacy Pharmacy to Willow Ambulatory",
         "description": "Receives medication orders from legacy pharmacy systems and files the medications orders to Willow Ambulatory Pharmacy. This interface is used only for conversions.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5350"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5350"
       },
       {
         "heading": "Incoming Ancillary Results",
         "description": "Receives test results from a laboratory, cardiology, or similar information system These results include general lab, microbiology, pathology, and blood bank results, results with a narrative/impression, and hyperlinks to results that are stored elsewhere. These results can include LIS data, RIS data, pacemaker data, ECG records, and hemodynamic data. The interface can accept incoming order messages that request order numbers, replace procedures, or cancel existing orders. This HL7v2 interface is specific to a clinical order and uses TCP/IP to exchange messages.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5387"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5387"
       },
       {
         "heading": "Discrete Genomic Results",
         "description": "Discrete genomic results file to Epic via the  Incoming Ancillary Results interface . To include discrete genomic data as a part of the test's result, specifically formatted OBX segments must be included on the result (ORU^R01) message. These OBX segments follow the representation for discrete genomic data published in the HL7 Version 2.5.1 Implementation Guide: Lab Results Interface (LRI), Release 1 and the supported data elements are outlined in the specification document.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=7986"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=7986"
       },
       {
         "heading": "Incoming Ancillary Results - Imaging",
         "description": "Epic's radiology and cardiology software receives results from a imaging, cardiology, or transcription system for use in Epic. These results include results with a narrative/impression, and image availability or hyperlinks to results that are stored elsewhere, such as a PACS. This HL7v2 interface is specific to a clinical order and uses TCP/IP to exchange messages.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5390"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5390"
       },
       {
         "heading": "Digital Pathology",
         "description": "The integration between Beaker, Epic's lab software, and an image-management system for the digital pathology workflow utilizes the Outgoing Lab Instrument Orders and the Incoming Lab Instrument Results interfaces. Beaker sends patient, case, and slide information and receives image availability notifications to enable whole slide imaging workflows.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5420"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5420"
       },
       {
         "heading": "Incoming Transcriptions",
         "description": "In this scenario, an external system has findings in a text or image format. These findings are either observations from a given contact with a patient (such as a visit or a hospitalization) or observations specific to a clinical order. Traditionally, this interface was used to match dictations with their eventual transcription (hence the name), but it can be used for a broader range of clinical findings. The EHR receives and files documents from a transcription system, scanned documents from an external document management system, or notes generated in another clinical system. This interface is often used for clinical findings that don't neatly fit into more specific data elements. Notes created or updated by the transcription interface can trigger deficiency updates.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5316"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5316"
       },
       {
         "heading": "Incoming Scanned Document Link",
         "description": "Receives and files scan pointers from an external document management system. This interface can also receive base64 encoded documents and store them to an Epic server. This interface does not file textual data intended for use in Radiant or Cupid; those documents must be processed by the Incoming Ancillary Results and Orders interface set up as an Incoming Ancillary Results and Orders - Imaging interface. Messages must be in HL7 MDM format. Documents processed by this interface can satisfy deficiencies in the Health Information Module.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5323"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5323"
       },
       {
         "heading": "Smoking Cessation Integration",
         "description": "This is a group of three interfaces that together can be used to integrate with quit line vendors to communicate an order for cessation counseling, and receive in response the followup documented by the quit line and any medications, such as nicotine gum, given to the patient as part of the protocol.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5206"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5206"
       },
       {
         "heading": "Electronic Fetal Monitoring",
@@ -452,12 +452,12 @@
       {
         "heading": "Event Notifications via Direct",
         "description": "Epic sends CMS Event Notifications that conform to DirectTrust\u2019s  Event Notifications via the Direct Standard\u2122  implementation guide. The goal of these notifications is to improve care coordination across healthcare settings, reduce readmissions, and improve transitions. The provided specification contains details regarding the HL7v2 attachments.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5237"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5237"
       },
       {
         "heading": "Coding - Bidirectional",
         "description": "The bidirectional interface is used to integrate with encoders and computer-assisted coding systems to exchange information for Hospital Coding workflows. Epic offers front-end integrations through web services as well as back-end integration methods. Separately, the outgoing interface can be used to send the final coded information to downstream systems such as care management products.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5430"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5430"
       },
       {
         "heading": "Electronic Laboratory Reporting",
@@ -467,37 +467,37 @@
       {
         "heading": "NAACCR Pathology Reporting",
         "description": "This  Outgoing Results and Orders Interface  sends messages for pathology reports that contain electronic cancer checklists. These messages conform to the North American Association of Central Cancer Registries (NAACCR) Standards for Cancer Registries Volume V rules for constructing HL7 messages for CAP electronic cancer checklist synoptic reporting.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5214"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5214"
       },
       {
         "heading": "Incoming Vaccination Administration",
         "description": "Receives unsolicited vaccination administration updates from either an immunization registry or an external clinical system that is not a registry. If integrating with a registry that supports the query interface, the query is the preferred integration.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5315"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5315"
       },
       {
         "heading": "Outgoing Vaccination Query",
         "description": "Initiates a query to and receive a response from an immunization registry system. Each query requests data for a given patient. Generally, registries provide historical immunization data. Some registries additionally supply immunization recommendation data. The incoming portion of the interface does not directly update immunizations in the chart; the provider sees the response from the registry and decides what should be added to the patient record. HL7 2.5.1 specification conforms to the  Center for Disease Control HL7 2.5.1 Implementation Guide for Immunization Messaging .",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5201"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5201"
       },
       {
         "heading": "Outgoing Vaccination Administration",
         "description": "Sends information about vaccination administrations to either an immunization registry or a clinical system or receiving system that is not a registry.  An incoming response interface receives and files the response/acknowledgement returned from an immunization registry. The specification conforms to HTI-1 regulations, using the Center for Disease Control Implementation Guide for Immunization Messaging.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5204"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5204"
       },
       {
         "heading": "Incoming Patient Administration from Population Register",
         "description": "The Finnish Population Information System (formerly known as the National Population Register or VRK), is a computerized national register that contains demographic information about Finnish citizens and foreign citizens residing in Finland. The population register sends data to this interface in a batch.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5341"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5341"
       },
       {
         "heading": "Incoming Referral Notification",
         "description": "The recommended workflow, for a full closed loop referral is a 360 Exchange Closed Loop integration.  360X Closed Loop Referral .   This HL7v2 interface receives referral information from an external system, and is only able to create, update, and cancel a request for a referral in the receiving Epic system.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5326"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5326"
       },
       {
         "heading": "Outgoing Referral Notification",
         "description": "The recommended workflow, for a full closed loop referral is a 360 Exchange Closed Loop integration.  360X Closed Loop Referrals  This HL7v2 interface only sends new or updated request for referral information.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5216"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5216"
       }
     ]
   },
@@ -509,7 +509,7 @@
       {
         "heading": "Outgoing Child Protection Information Sharing NHS Query",
         "description": "This interface sends queries to the Spine for the NHS Digital Child Protection - Information Sharing project (CP-IS) in the United Kingdom. The Spine responds whether a child is in Child Protection, a child who is a Looked After Child, or an expectant mother of an unborn child who will be under Child Protection.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5289"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5289"
       },
       {
         "heading": "Outgoing Infection Reporting to NHSN Interface",
@@ -519,7 +519,7 @@
       {
         "heading": "Outgoing Risk Assessment Query",
         "description": "Supports comprehensive breast cancer risk assessment following the HL7 Version 3 Implementation Guide for Family History/Pedigree Interoperability, Release 1 - US Realm April 2013.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5756"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5756"
       },
       {
         "heading": "Data Exchange with DBC Onderhoud Grouper",
@@ -529,27 +529,27 @@
       {
         "heading": "Real-Time Location System (RTLS) Interface",
         "description": "Tracks the location of patients, staff, and medical devices within a facility.  This automates and enhances many workflows.  For example, it can automatically document operating room wheels in and out times, or make it easier for staff to associate medical devices with specific patients.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5192"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5192"
       },
       {
         "heading": "Outgoing BSN Verification Query",
         "description": "BSN or Burgerservicenummer verification is required in the Netherlands. There are two types of BSN queries: BSN request, and BSN verification. Using provided demographic data, a BSN request will retrieve and store the BSN for a patient, whereas the BSN verification serves to validate that the BSN a user has stored to the patient record is correct.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5291"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5291"
       },
       {
         "heading": "Incoming QRDA Documents Interface",
         "description": "Imports QRDA document information used to report on quality measures for regulatory programs. This interface supports ONC 2015 Edition Certification (for Meaningful Use).",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5328"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5328"
       },
       {
         "heading": "Outgoing National Healthcare Survey Interface",
         "description": "Reports National Healthcare Survey data to the Centers for Disease Control and Prevention (CDC).",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5248"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5248"
       },
       {
         "heading": "Clinical Document Architecture (CDA)",
         "description": "When exchanging patient summary documents, we use Clinical Document Architecture (CDA) as the content standard. CDA is an XML-based markup standard defined by Health Level Seven (HL7), intended to specify encoding, structure and semantics of clinical documents for the purpose of exchange. Care Everywhere supports the exchange of document defined in the Consolidated CDA (C-CDA) framework, which is required for ONC 2015 Edition certification for Meaningful Use. Epic's EHR can consume any valid C-CDA or CDA document. Epic's EHR can create the following documents:  HL7/ASTM CCD (HITSP C32 Implementation) HL7/IHE Consolidated CDA (CCD and Progress Notes Template) Contact us  if you have questions about our CDAs.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5433"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5433"
       }
     ]
   },
@@ -561,47 +561,47 @@
       {
         "heading": "Outgoing Cancer Reporting",
         "description": "Allows organizations using Epic's oncology software, Beacon, to meet the Meaningful Use objective to send cancer case information to cancer registries.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5290"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5290"
       },
       {
         "heading": "Research Study Management and Enrollment",
         "description": "These interfaces integrate with an external Clinical Research Management system to facilitate research workflows. They can create or update research study records, associate patients to a study, update the patient's enrollment status in the study, and receive study billing grid information. These interfaces follow the IHE - Retrieve Protocol for Execution (RPE) implementation, IHE - Clinical Research Process Content Profile (CRPC), HL7 Study Participation, and HL7 Study Design.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5195"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5195"
       },
       {
         "heading": "Incoming Patient Discovery",
         "description": "In this scenario, an external system has a patient that it is attempting to match in an Epic system. The external system sends a subset of patient demographics and if Epic can find a unique high-confidence match, it returns the matching patient. Epic implements all transactions required in the IHE Technical Framework to support the IHE Cross-Community Patient Discovery Profile as a Responding Gateway.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5424"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5424"
       },
       {
         "heading": "Outgoing Patient Discovery",
         "description": "In this scenario, a patient presents to an Epic system, and a user needs to match the patient in an external system. Epic sends a subset of patient demographics to the external system, which responds with the patient who matches the query. Epic confirms the match, usually through the user, and then report back the user's actions. Epic implements all transactions required in the IHE Technical Framework to support the IHE Cross-Community Patient Discovery Profile as an Initiating Gateway.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5424"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5424"
       },
       {
         "heading": "Implantable Device - Cardiac",
         "description": "Epic's cardiology software implements IHE's Implantable Device - Cardiac - Observation Profile as an Implantable Device - Cardiac - Consumer. It supports the OBX - Encapsulated PDF or Ref Pointer option and the PV1 - Patient Visit option.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5374"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5374"
       },
       {
         "heading": "Medical Device Waveform Display",
         "description": "The Epic Monitor can receive streaming waveform data from device and middleware vendors for displaying in the Waveform widget in the Epic Monitor.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5314"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5314"
       },
       {
         "heading": "Cross-Community Access (XCA) and Cross-Enterprise Document Sharing (XDS.b)",
         "description": "The process of exchanging clinical documents is handled through a series of messages exchanged via standards-based SOAP Web services. Because organizations that use Epic software are often the size of regional HIEs themselves, interoperability with the Epic EHR requires no centralized infrastructure. Instead, the EHR acts as a document repository itself for point-to-point queries. Specifically, the EHR supports IHE XCA and IHE XDS.b Query-Response.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5425"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5425"
       },
       {
         "heading": "Sending Clinical Documents (Direct)",
         "description": "Epic's EHR supports document exchange via the  Direct  protocol. Documents sent from an Epic EHR via Direct follow the XDR/XDM option, in which structured documents are sent in the message with structured metadata. Similarly, Epic receives structured documents to file to the appropriate chart. External provider directories containing Direct addresses can be imported into the Epic EHR using a  standard format . While Epic software supports the full SMTP+S/MIME stack, organizations using Epic can alternatively choose to delegate duties to an external HISP. Providers use the EHR to push data using Direct, and patients can use their portal to send structured clinical summaries to any arbitrary Direct endpoint with which the organization has established trust.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5189"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5189"
       },
       {
         "heading": "Closing Referral Loop",
         "description": "To facilitate closing the loop on referrals so referring providers can be kept up to date on the treatment received by their patients, Epic supports additional elements within Direct messaging using the XDR transport method. These additional elements indicate Direct messages which include a specialist report generated during the care of a patient who has been referred to an organization outside their primary care organization.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5432"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5432"
       },
       {
         "heading": "FHIR Launch Sequence",
@@ -611,27 +611,27 @@
       {
         "heading": "Device Enterprise Communication",
         "description": "Epic supports the IHE Device Enterprise Communication (DEC) profile for receiving vendor independent, multi-modality patient care device data.  This supports a wide variety of devices from vital signs monitors to point of care systems.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5374"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5374"
       },
       {
         "heading": "Device Alarm Communication",
         "description": "Epic supports the IHE Alarm Communication Management (ACM) profile for receiving device initiated alerts.  This standard helps facilitate communication of alarm information to caregivers.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5313"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5313"
       },
       {
         "heading": "Infusion Documentation",
         "description": "Epic supports the IHE Point-of-Care Infusion Verification (PIV) standard for electronic transmission of infusion information as part of medication administration.  This decreases the need for manual pump programming and may leverage additional decision support internal to the pump.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5363"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5363"
       },
       {
         "heading": "Newborn Notification",
         "description": "Epic supports the IHE Newborn Admission Notification Information (NANI) profile for transmitting newborn information to Public Health systems.  This standard can be used to send ADT messages after a baby is born to provide public health with an initial notification of a new child.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5238"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5238"
       },
       {
         "heading": "360X Closed Loop Referrals",
         "description": "360 Exchange Closed Loop Referrals (360X) is an industry and government supported standard specification for referrals that allows the exchange of patient referral data between different EHR environments. Epic and non-Epic organizations whose EHR systems meet the specification\u2019s requirements can exchange 360X referrals.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5441"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5441"
       }
     ]
   },
@@ -643,7 +643,7 @@
       {
         "heading": "$submit-attachment (Prior Auth) (R4)",
         "description": "This web service is used by providers to submit additional information to facilitate the payer's prior authorization review process. \n The current types of additional information that are supported include QuestionnaireResponse Bundles and DocumentReference in the form of PDFs. \n This is generally used in conjunction with  Claim.$submit (Prior Auth) (R4)  as a way to add details to a specific submission. \n This incoming web service enables submission of additional information to the payer's UM system using FHIR. Refer to  Operation Definition of $submit-attachment v2.1.0  and  CDex Parameters Submit Attachment Profile v2.1.0  for more information.",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11276"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11276"
       },
       {
         "heading": "Account",
@@ -658,27 +658,27 @@
       {
         "heading": "AGL ScanViewing Action",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=10592"
+        "specLink": "https://fhir.epic.com/Sandbox?api=10592"
       },
       {
         "heading": "AGL ScanViewing Closing",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=10593"
+        "specLink": "https://fhir.epic.com/Sandbox?api=10593"
       },
       {
         "heading": "AGL ScanViewing DocumentDisplay",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=10591"
+        "specLink": "https://fhir.epic.com/Sandbox?api=10591"
       },
       {
         "heading": "AGL ScanViewing Handshake",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=10590"
+        "specLink": "https://fhir.epic.com/Sandbox?api=10590"
       },
       {
         "heading": "AGL TelephoneAlert",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11125"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11125"
       },
       {
         "heading": "AllergyIntolerance",
@@ -723,17 +723,17 @@
       {
         "heading": "CDS Hooks",
         "description": "CDS Hooks is an HL7 standard for in-workflow, real-time, provider-facing decision support integration between Electronic Health Record systems and external Decision Support Services. A summary understanding of the specification is necessary for the discussion of state of Epic support for CDS Hooks, so check out the  HL7 published specification  and  current draft specification . Epic recommends against using this feature for other purposes; if you need only a notification, we instead recommend using an event based interface.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5413"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5413"
       },
       {
         "heading": "Claim.$inquire (Prior Auth) (R4)",
         "description": "This web service enables providers to inquire about the status of existing prior authorization requests in the utilization management system using FHIR technology. It is an alternative to the traditional ANSI X12 278 transaction, which is the EDI standard historically used by payers and providers to exchange prior authorization requests and inquiries electronically.  \n Providers can use this service to check the current review status, retrieve pended authorization details, or confirm approved/denied outcomes for previously submitted prior authorization requests. This API functions similarly to the incoming 278 inquiry API but, instead, uses the FHIR specification defined in  the Da Vinci Prior Authorization Support implementation guide .",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11275"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11275"
       },
       {
         "heading": "Claim.$submit (Prior Auth) (R4)",
         "description": "This web service enables providers to submit prior authorization requests to the utilization management system using FHIR technology. It is an alternative to an ANSI X12 278 Health Care Services Request For Review message, which is the EDI standard historically used by payers and providers to exchange prior authorization requests electronically.  \n Providers can use this service as standalone, following Coverage Requirements Discovery (CRD) when prior authorization is determined necessary, or after Documentation Templates and Rules (DTR) interactions to submit QuestionnaireResponse resources alongside the initial authorization request. This API functions similarly to the incoming 278 request API but, instead, uses the FHIR specification defined in  Da Vinci Prior Authorization Support (PAS) implementation guide v2.1.0 for PAS Claim .",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11274"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11274"
       },
       {
         "heading": "Communication",
@@ -773,12 +773,12 @@
       {
         "heading": "Coverage Requirements Discovery (R4)",
         "description": "This web service is available as part of Epic's utilization management module for clients to integrate with Epic health plans and payers. \n This web service is based on the  implementation guide published by the HL7\u00ae FHIR\u00ae Da Vinci Project for Coverage Requirements Discovery (STU 2.1) , acting as a payer-side CRD server. The purpose of CRD is to communicate coverage information about a requested service for a covered member, including whether the service is a covered benefit, whether the service requires a prior authorization, and whether additional documentation is needed through the Documentation Templates and Rules web service (DTR). \n Epic's CRD payer web service supports responding to requests by two mechanisms: directly by using authorization requirements created inside Epic's utilization management module; and by forwarding the CRD request to another system. This guide describes the requirements and invariants of Epic's implementation of CRD for its utilization management module. Coordinate with each payer you integrate with to understand any additional features or limitations of other CRD systems that might be involved in final responses over this web service.  \n At the time of writing, CRD is a constantly evolving specification and is still receiving corrections and enhancements, as is our server implementation, so this content will change over time.",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11288"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11288"
       },
       {
         "heading": "Coverage Requirements Discovery Endpoint Discovery (R4)",
         "description": "This web service is only for use alongside the  Coverage Requirements Discovery  (CRD) service available with Epic's utilization management module for health plans and payers. \n The Coverage Requirements Discovery Endpoint Discovery API allows a client to discover endpoints and prefetch queries to be used for the CRD service with a health plan or payer using Epic's utilization management module. \n CRD is based on  the CDS Hooks standard . Refer to the documentation for that standard for more information about the  CDS Hooks Discovery  endpoint this web service implements. For more information about CRD, refer to the  implementation guide published by the HL7\u00ae FHIR\u00ae Da Vinci Project for Coverage Requirements Discovery (STU 2.1) .",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11279"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11279"
       },
       {
         "heading": "COVID SMART Scheduling Links",
@@ -788,7 +788,7 @@
       {
         "heading": "Da Vinci Plan Net Provider Directory",
         "description": "The Da Vinci Plan Net Provider Directory API enables public access to provider directory information, including health insurer's insurance plans, their associated networks, and the organizations and providers that participate in these networks.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=9465"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=9465"
       },
       {
         "heading": "Device, DeviceRequest, DeviceUseStatement",
@@ -798,7 +798,7 @@
       {
         "heading": "Device.$auxiliary-function (Auxiliary Function Notification) (R4)",
         "description": "This web service generates a push notification that represents a task triggered from an auxiliary function. \n This is currently exclusive to staff duress push notifications, which are created when a user presses a panic button on a Real-Time Location System (RTLS) device and are sent to configured groups of users. The notification tracks who has received or responded to the notification. \n Staff duress push notifications require third-party RTLS Badges integration with Epic.",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11352"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11352"
       },
       {
         "heading": "DiagnosticReport",
@@ -808,7 +808,7 @@
       {
         "heading": "Document & Image Management",
         "description": "Manage the ability to retrieve and view images and documents that are stored in a third-party Document Management System (DMS). Through these integrations, users can more easily view documents from Epic without separately opening the DMS.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5154"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5154"
       },
       {
         "heading": "DocumentReference",
@@ -818,7 +818,7 @@
       {
         "heading": "Encoder Interface API",
         "description": "The GetEncoderMessage and SetEncoderMessage APIs are used to integrate with encoders and computer-assisted coding systems to exchange information for Hospital Coding workflows. Epic offers front-end integrations through web services as well as back-end integration methods. To see the HL7 payload, check out the  HL7v2 - Coding-Bidirectional spec .",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5458"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5458"
       },
       {
         "heading": "Encounter",
@@ -843,12 +843,12 @@
       {
         "heading": "ExplanationOfBenefit.Read (Prior Auth) (R4)",
         "description": "Use this API to retrieve a specific ExplanationOfBenefit (Prior Auth) resource. This resource represents medical benefit prior authorization information, including requests for services or bed day authorizations submitted for a patient. \n The data returned includes prior authorization requests processed directly by the organization as well as prior authorizations received from external payers through payer data exchange workflows.  Data loaded from other FHIR servers is returned in the format the organization received it. Because of this, the documentation below does not apply to these loaded resources. These resources can include any elements from the FHIR specification and can be distinguished from other resources by the presence of meta.tag set to  external-bulk-data .   \n When used as part of the CMS Payer-to-Payer API, only approved prior authorizations are returned. In other interoperability scenarios, both approved and denied prior authorizations can be returned.",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11039"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11039"
       },
       {
         "heading": "ExplanationOfBenefit.Search (Prior Auth) (R4)",
         "description": "Use this API to search for ExplanationOfBenefit (Prior Auth) resources for a patient. This resource represents medical benefit prior authorization requests and determinations, including both service-based and bed day authorizations. \n The API can retrieve prior authorizations processed directly by the organization as well as prior authorizations received from external payers through payer data exchange workflows. Data loaded from other FHIR servers is returned in the format the organization received it. Because of this, the documentation below does not apply to these loaded resources. These resources can include any elements from the FHIR specification and can be distinguished from other resources by the presence of meta.tag set to  external-bulk-data .   \n When used as part of the CMS Payer-to-Payer API, only approved prior authorizations are returned. In other interoperability scenarios, both approved and denied prior authorizations can be returned.",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11054"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11054"
       },
       {
         "heading": "FamilyMemberHistory",
@@ -863,22 +863,22 @@
       {
         "heading": "GetDepartmentWaitTimes",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=204"
+        "specLink": "https://fhir.epic.com/Sandbox?api=204"
       },
       {
         "heading": "GetProviderWaitTimes",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=363"
+        "specLink": "https://fhir.epic.com/Sandbox?api=363"
       },
       {
         "heading": "GetScanSignatureContext",
         "description": "See  Scan Signature Deficiencies  on open.epic for further documentation on this resource. \n This web service returns the complete list of patient encounters that are related to the given encounter for scan signature purposes. This service can also be used to find all the documents a provider has to sign in each encounter so the provider can work on them all at once. \n Vendors should call this service to get the full list of patient CSNs for which to display documents and signature requirements. This service will search for patient encounters linked to the episode of the CSN and documents with outstanding signature requirements. Outstanding in this case means a provider hasn't completed the document\u2019s signature requirement.",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=10529"
+        "specLink": "https://fhir.epic.com/Sandbox?api=10529"
       },
       {
         "heading": "GetWaitTimes",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=220"
+        "specLink": "https://fhir.epic.com/Sandbox?api=220"
       },
       {
         "heading": "Group",
@@ -888,17 +888,17 @@
       {
         "heading": "Group.$bulk-member-match File Request",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11426"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11426"
       },
       {
         "heading": "Group.$bulk-member-match Kickoff",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11424"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11424"
       },
       {
         "heading": "Group.$bulk-member-match Status Request",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11425"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11425"
       },
       {
         "heading": "ImagingStudy",
@@ -918,7 +918,7 @@
       {
         "heading": "InitializeDeviceResponse",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=708"
+        "specLink": "https://fhir.epic.com/Sandbox?api=708"
       },
       {
         "heading": "International Patient Summary (IPS)",
@@ -968,12 +968,12 @@
       {
         "heading": "Outgoing Vital Records Death Reporting",
         "description": "Automates the death certification process by sending the required medical certifier information for a patient death to state or jurisdictional Vital Records Reporting systems.  The interface follows the HL7 Vital Records Death Reporting (VRDR) FHIR Implementation Guide, VRDR 3.0.0, FHIR STU3.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=9450"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=9450"
       },
       {
         "heading": "PAS Incoming Claim Response Notification",
         "description": "The HL7 FHIR Da Vinci Prior Authorization Support (PAS) STU 2.1 ( https://hl7.org/fhir/us/davinci-pas/STU2.1/ ) functionality is intended to streamline the prior authorization process using a FHIR-based data exchange rather than the previous ANSI X12-based electronic messaging specification as well as to encourage automation throughout the process. \n Complex prior authorization requests can take some time to adjudicate. When a health plan finishes their adjudication or modifies the request, they shall use the $notify operation to inform the health system. This operation is essentially an asynchronous response to an authorization request using a bundled ClaimResponse resource ( https://hl7.org/fhir/us/davinci-pas/STU2.1/StructureDefinition-profile-pas-response-bundle.html ). \n While the HL7 specification suggests that a subscription ( https://hl7.org/fhir/us/davinci-pas/STU2.1/specification.html#subscription ) request should first be submitted to initiate this notification process, Epic recommends that health plans should always assume that a subscription is desired when an authorization request has been submitted to improve automation.",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11277"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11277"
       },
       {
         "heading": "Patient",
@@ -983,12 +983,12 @@
       {
         "heading": "Patient Lookup and Identifiers",
         "description": "Search for patients and obtain or assign identifiers. If no patient can be found for the given criteria, a patient record can be created.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5454"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5454"
       },
       {
         "heading": "Personnel Management",
         "description": "Create, update, and delete user records in Epic. With this suite of services, you can also view and update user groups, pager IDs, user login departments, and  departments the user has access to.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5453"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5453"
       },
       {
         "heading": "Practitioner, PractitionerRole",
@@ -998,17 +998,17 @@
       {
         "heading": "Print Job Status",
         "description": "Use the UpdatePrintJobStatus API to send back information about the status of the print job that you received from Epic through Epic Print Service (EPS).",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5451"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5451"
       },
       {
         "heading": "PrintTestPage",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=380"
+        "specLink": "https://fhir.epic.com/Sandbox?api=380"
       },
       {
         "heading": "PrintTestPageToTray",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=10040"
+        "specLink": "https://fhir.epic.com/Sandbox?api=10040"
       },
       {
         "heading": "Procedure, ProcedureRequest, ServiceRequest",
@@ -1018,7 +1018,7 @@
       {
         "heading": "ProcessTransactionResponse",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=710"
+        "specLink": "https://fhir.epic.com/Sandbox?api=710"
       },
       {
         "heading": "Provenance",
@@ -1033,17 +1033,17 @@
       {
         "heading": "Questionnaire.$log-questionnaire-errors (R4)",
         "description": "The Questionnaire.$log-questionnaire-errors operation allows a client to report errors encountered while rendering or processing a DTR questionnaire. The request identifies the questionnaire using its canonical URL. The server validates the canonical, resolves the appropriate downstream endpoint based on that canonical, and forwards the request to that endpoint for processing. This implementation does not interpret or process the reported error details locally. Any additional parameters (such as an operationOutcome describing the errors) are forwarded to the resolved downstream endpoint without modification. If the questionnaire canonical cannot be validated or resolved to a downstream endpoint, the operation returns an OperationOutcome describing the failure. On successful resolution, the downstream endpoint\u2019s response is returned unchanged. Refer to  Operation Definition of $log-questionnaire-errors v2.1.0  and  Structure Definition of dtr-log-errors-input-parameters v2.1.0  for more information.",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11414"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11414"
       },
       {
         "heading": "Questionnaire.$next-question (R4)",
         "description": "The Questionnaire.$next-question operation supports adaptive (dynamic) questionnaires by enabling a client to request the next set of questions based on the answers collected so far. \n The client sends a FHIR Parameters resource containing a single input parameter named \"in\", whose value is a QuestionnaireResponse representing the current questionnaire state. The QuestionnaireResponse includes the Questionnaire definition as a contained resource and any answers gathered up to that point. \n The server evaluates the adaptive logic and returns a FHIR Parameters resource containing a single output parameter named \"out\", whose value is an updated QuestionnaireResponse. The returned QuestionnaireResponse preserves previously provided answers and updates the contained Questionnaire to include the next question(s) the client should present. \n This operation is typically called repeatedly in a loop: \n \n \n The client submits the current QuestionnaireResponse. \n \n The server returns the next question(s). \n \n The client collects answers and resubmits. \n This cycle repeats until the server returns a QuestionnaireResponse with status = complete. \n If the input is invalid or incomplete, the server returns an OperationOutcome describing the issue. \n Refer to  Operation Definition of DTR Questionnaire $next-question v2.1.0 ,  Structure Definition of dtr-next-question-input-parameters v2.1.0 , and  Structure Definition of dtr-next-question-output-parameters v2.1.0  for more information.",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11400"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11400"
       },
       {
         "heading": "Questionnaire.$questionnaire-package (R4)",
         "description": "The HL7 FHIR Da Vinci Documentation Templates and Rules (DTR)\u00a0STU 2.1\u00a0( https://hl7.org/fhir/us/davinci-dtr/STU2.1/ )\u00a0enables\u00a0health plans\u00a0to express their documentation requirements for prior authorizations and to allow\u00a0health systems\u00a0to gather and submit that information in a streamlined manner.\u00a0 \n When\u00a0a health plan responds to a\u00a0CRD\u00a0( https://hl7.org/fhir/us/davinci-crd/STU2.1/ )\u00a0or PAS ( https://hl7.org/fhir/us/davinci-pas/STU2.1/ )\u00a0message\u00a0indicating\u00a0that\u00a0clinical or administrative data\u00a0is\u00a0required,\u00a0and\u00a0optionally\u00a0includes\u00a0a canonical\u00a0questionnaire,\u00a0the health\u00a0system\u00a0performs\u00a0a $questionnaire-package operation\u00a0( https://hl7.org/fhir/us/davinci-dtr/STU2.1/OperationDefinition-questionnaire-package.html ).\u00a0 \n Health systems use the\u00a0$questionnaire-package operation\u00a0( https://hl7.org/fhir/us/davinci-dtr/STU2.1/StructureDefinition-dtr-qpackage-input-parameters.html ) to\u00a0retrieve\u00a0a DTR\u00a0Standard\u00a0Questionnaire resource\u00a0( https://hl7.org/fhir/us/davinci-dtr/STU2.1/StructureDefinition-dtr-std-questionnaire.html )\u00a0from the output ( https://hl7.org/fhir/us/davinci-dtr/STU2.1/StructureDefinition-dtr-qpackage-output-parameters.html ), which is shown to\u00a0an appropriate user.\u00a0 \n The health system then builds a\u00a0QuestionnaireResponse\u00a0resource from the answered questionnaire and sends it to the health plan as part of the PAS request process.",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11287"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11287"
       },
       {
         "heading": "RelatedPerson",
@@ -1053,7 +1053,7 @@
       {
         "heading": "Release of Information",
         "description": "Create and update release of information (ROI) requests.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5450"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5450"
       },
       {
         "heading": "RequestGroup",
@@ -1073,7 +1073,7 @@
       {
         "heading": "Scan Signature Deficiencies",
         "description": "When using a document management system (DMS) to manage scans on a patient's chart, it's also possible to track signature requirements for those scans in Epic. DMS applications can use these web services to create and update signature deficiencies in Epic. These signature deficiencies will notify the signing users and let them launch directly into the DMS's signing application.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5449"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5449"
       },
       {
         "heading": "Security Information and Event Management (SIEM)",
@@ -1098,12 +1098,12 @@
       {
         "heading": "UpdateUserDemographics",
         "description": "",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=126"
+        "specLink": "https://fhir.epic.com/Sandbox?api=126"
       },
       {
         "heading": "Utilization Management",
         "description": "The CriteriaReview web service retrieves data from a criteria review record. A ReviewCollection groups together CriteriaReview resources that have been created for a patient previously.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5448"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5448"
       },
       {
         "heading": "ValueSet",
@@ -1113,7 +1113,7 @@
       {
         "heading": "ValueSet.$expand (DTR Payer Guidelines) (R4)",
         "description": "The ValueSet resource represents a subset of the codes in a code system that is supported by a given server. The DTR (Documentation Templates and Rules) $expand operation of the ValueSet resource can be used to dynamically expand value sets referenced in DTR questionnaires, providing a simple collection of codes suitable for use for data entry or validation within documentation requirement workflows. It is important that this is the endpoint used to fetch ValueSets from references that come through during CRD/DTR/PAS related workflows. \n The DTR $expand operation response represents a single ValueSet resource, or an OperationOutcome with an error message. \n DTR value set expansion only supports querying the ValueSet.$expand operation at the resource type level.",
-        "specLink": "https://open.epic.com/https://fhir.epic.com//Sandbox?api=11412"
+        "specLink": "https://fhir.epic.com/Sandbox?api=11412"
       }
     ]
   },
@@ -1125,57 +1125,57 @@
       {
         "heading": "Encoder Interface API",
         "description": "The GetEncoderMessage and SetEncoderMessage APIs are used to integrate with encoders and computer-assisted coding systems to exchange information for Hospital Coding workflows. Epic offers front-end integrations through web services as well as back-end integration methods. To see the HL7 payload, check out the  HL7v2 - Coding-Bidirectional spec .",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5458"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5458"
       },
       {
         "heading": "Patient Lookup and Identifiers",
         "description": "Search for patients and obtain or assign identifiers. If no patient can be found for the given criteria, a patient record can be created.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5454"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5454"
       },
       {
         "heading": "Personnel Management",
         "description": "Create, update, and delete user records in Epic. With this suite of services, you can also view and update user groups, pager IDs, user login departments, and  departments the user has access to.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5453"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5453"
       },
       {
         "heading": "Phone System Pause/Resume",
         "description": "When collecting credit card payments over the phone, you may not want the credit card number (as read by the patient) to be contained in the customer service recording files. This web service can be setup to send a request to the phone system to pause the recording when the staff's credit card entry form opens, and send another request to the phone system to resume the recording when the credit card form closes.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5452"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5452"
       },
       {
         "heading": "Print Job Status",
         "description": "Use the UpdatePrintJobStatus API to send back information about the status of the print job that you received from Epic through Epic Print Service (EPS).",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5451"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5451"
       },
       {
         "heading": "Release of Information",
         "description": "Create and update release of information (ROI) requests.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5450"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5450"
       },
       {
         "heading": "Utilization Management",
         "description": "The CriteriaReview web service retrieves data from a criteria review record. A ReviewCollection groups together CriteriaReview resources that have been created for a patient previously.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5448"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5448"
       },
       {
         "heading": "Scan Signature Deficiencies",
         "description": "When using a document management system (DMS) to manage scans on a patient's chart, it's also possible to track signature requirements for those scans in Epic. DMS applications can use these web services to create and update signature deficiencies in Epic. These signature deficiencies will notify the signing users and let them launch directly into the DMS's signing application.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5449"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5449"
       },
       {
         "heading": "Outgoing SMS",
         "description": "You may want to send text messages to patients or proxies for a variety of reasons, such as to remind them of upcoming appointments or surgeries, send notifications about their MyChart account, or update visitors about a patient\u2019s surgery. Epic\u2019s SMS (Short Message Service) web service enables you to pass a phone number and simple message data to a SMS web service vendor, which will send a text message directly to a patient\u2019s mobile phone over a cellular network.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5455"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5455"
       },
       {
         "heading": "MyChart Bedside MDM Patient Data Wipe",
         "description": "Epic sends requests to Mobile Device Management (MDM) vendors so they can wipe data corresponding to discharge and/or transfer workflows. The requests include an MDM-managed device's identifier to the MDM vendor's endpoint so that the MDM vendor can then clear data from the device remotely.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5456"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5456"
       },
       {
         "heading": "Embedded Context-Aware Linking for Epic Monitor",
         "description": "Epic's Remote Sitter solution allows organizations to engage in continuous video surveillance of multiple patients (typically 12 a time), be it for COVID, fall risk, or behavioral disorders. It\u2019s a grid of videos embedded in our Epic Monitor platform and surrounded with contextual information from the EMR. Our plan is to embed web browser controls, each containing a CAL video feed, so that customers can engage with any video vendor on Vendor Services. We call it ECAL (Embedded CAL).",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5459"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5459"
       },
       {
         "heading": "Enterprise Image Access",
@@ -1185,92 +1185,92 @@
       {
         "heading": "Content Linking",
         "description": "The patient portal provides patients with a view into the medical chart maintained by their healthcare organization. This information can be supplemented by educational materials that are specific to a patient's problems, medications, and other information. This functionality is called Content Linking. While many approaches have been used to achieve this integration in the past, Epic recommends that new organizations use the Infobutton APIs as they are implemented through the National Library of Medicine and  MedlinePlus .",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5426"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5426"
       },
       {
         "heading": "E-Signature",
         "description": "Epic's kiosk software can be used to collect signatures for consent or other purposes. These signatures can then be sent to an external document management system. The kiosk sends an image of the signature to the document management system, which in turn creates a reference to the signature document within the EHR.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5404"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5404"
       },
       {
         "heading": "Credit Card and Bank Account Integration",
         "description": "Epic provides support for credit cards to be used with the Epic system to pay copays, hospital and outpatient bills, and for medications. This integration is handled through credit card gateway systems, which send payment data to processing services that verify the payments with appropriate banks. The gateway then sends the verified payment information back to the Epic system to post the payment. This integration is handled through the patient portal and patient kiosk software as well as in over-the-phone and billing-office use cases. Epic software for credit card processing follows the PA-DSS requirements in its development.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5408"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5408"
       },
       {
         "heading": "Tapestry Document Linker DMS Integration",
         "description": "This web service allows third-party DMS vendors to launch activities within a pre-existing Hyperspace instance to link documents to records in Epic such as claims or coverages. Information about the document in the third-party database will be populated in the activity launched, and users can complete the linking workflow from the Hyperspace session. The web service can also launch a new Hyperspace instance if one is not open when the web service is called.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5393"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5393"
       },
       {
         "heading": "Credit Card and Check Scanning Device Integration",
         "description": "In addition to the Credit Card and Bank Account Integration specification, Epic provides separate and additional support for non-keyboard emulation credit card devices. This integration is handled through an interface between Epic and your gateway software. The gateway software integrates with the device and provides Epic with transaction results for the credit card payment. This integration is handled through the patient kiosk and by front desk personnel during check-in or check-out. This interface is supplemental to the generic credit card interface described above and should be implemented in addition to that interface if you want to provide support for EMV devices.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5412"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5412"
       },
       {
         "heading": "Incoming Computer-Telephony Integration",
         "description": "Epic integrates with your organization\u2019s phone system to automatically open the appropriate chart or another activity in Epic when calls are received.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5376"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5376"
       },
       {
         "heading": "Outgoing Computer-Telephony Integration",
         "description": "Epic integrates with your organization\u2019s phone system so users can place or end a call directly from a patient chart or another activity in Epic, and details about the call are logged. Your phone system can also update Epic with the call identifier after the call.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5283"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5283"
       },
       {
         "heading": "Outbound Fax Services with Epic Print Service",
         "description": "Epic integrates with fax management systems using the outbound faxing web service. This web service allows Epic community members to fax documents generated by various applications from their instance of Epic, and receive back information about whether the transmission was successful.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5308"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5308"
       },
       {
         "heading": "SAML 2.0 Reauthentication for Haiku and Canto EPCS",
         "description": "Haiku and Canto, Epic's mobile apps for physicians on iOS and Android devices, support launching a web portal during e-prescribing controlled substances (EPCS) to verify the physician's identity with an EPCS-qualified identity provider (IdP). The IdP returns a valid SAML assertion to Haiku or Canto, which allows the physician to continue placing orders. This process follows the SP-initiated Web Browser SSO profile defined in the OASIS SAML 2.0 specification. The workflow is also supported in Rover, Epic's mobile app for nurses, on iOS devices only.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5422"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5422"
       },
       {
         "heading": "Binary Data Retrieval",
         "description": "This web integration enables Epic to request image and document files from an external system. Epic will then display these images inline within the user's workflow.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5392"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5392"
       },
       {
         "heading": "Outgoing MDS Data for MDS Scrubbers",
         "description": "The Minimum Data Set (MDS) scrubber interface allows MDS coordinators to send in-progress and completed  MDS assessments  electronically to a 3rd-party MDS scrubbing vendor and receive real-time feedback.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5307"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5307"
       },
       {
         "heading": "EPS Document Retrieval Web Service",
         "description": "This web service integration enables Epic print services (EPS) to query a document management system (DMS) for images or documents to insert into a print job. This is useful when you want a scan to be stored in your DMS, but want to include that scan in something you print.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5405"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5405"
       },
       {
         "heading": "Wait Time APIs",
         "description": "This set of APIs returns estimated wait time information. Select the appropriate API to retrieve wait time information for a given emergency department, urgent care clinic, ambulatory clinic, or outpatient provider.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5760"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5760"
       },
       {
         "heading": "Print Test Page",
         "description": "Use the PrintTestPage API to trigger test print jobs from a specified printer device.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5803"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5803"
       },
       {
         "heading": "Output Management Web Service",
         "description": "Epic integrates with third-party output management systems using the outbound print job web services. These web services allow Epic community members to send print requests to a third-party output management server and receive back information about whether the print job was successful.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5806"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5806"
       },
       {
         "heading": "Encryption Guide",
         "description": "PACS integrations use encryption to protect confidential information sent between systems. This guide describes the technical details of Epic\u2019s supported encryption algorithms, including step-by-step instructions and sample encrypted payloads.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=6055"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=6055"
       },
       {
         "heading": "Tapestry Generic Code Editor",
         "description": "Bi-directional claim code editing integration with Tapestry",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5164"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5164"
       },
       {
         "heading": "Disassociate Mobile Device",
         "description": "Use the DisassociateMobileDevice API to disassociate a mobile device from the server using its Install ID. After disassociation, the device no longer receives push notifications or VoIP calls, and users on shared devices no longer receive notifications from previously logged-in users.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=10323"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=10323"
       }
     ]
   },
@@ -1282,32 +1282,32 @@
       {
         "heading": "Imaging Integration",
         "description": "Epic has APIs available for PACS integration that include single sign-on, patient context synchronization, study context synchronization, and real-time measurement exchange. These APIs have been implemented to varying degrees across PACS and CPACS vendors. Check out our  DICOM conformance statement  as well. We additionally have an  encryption utility  for use with our XML integration (identical to URL encryption).",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5152"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5152"
       },
       {
         "heading": "MWL (Modality Work List)",
         "description": "This DICOM interface enables a piece of imaging equipment to obtain details of patients and scheduled examinations electronically, avoiding the need to type such information multiple times.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5409"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5409"
       },
       {
         "heading": "MPPS (Modality Performed Procedure Step)",
         "description": "This DICOM interface provides a mechanism for modalities to send the procedure start and procedure complete notification.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5409"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5409"
       },
       {
         "heading": "SR (Structured Reporting)",
         "description": "This DICOM interface provides a mechanism for modalities to send structured information from the performed exam to Epic. Each modality or exam can send different measurements.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5409"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5409"
       },
       {
         "heading": "SC (Secondary Capture)",
         "description": "This DICOM interface provides a mechanism for modalities or a PACS to forward a copy of the DICOM SC images flagged by the technologist to Epic. We can process this message and file the image to be used when reviewing the patient's chart.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5409"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5409"
       },
       {
         "heading": "WADO (Web Access to DICOM Objects) Import of Key Objects",
         "description": "This DICOM interface pulls key objects from the PACS via WADO to support streamlined workflows throughout the EHR.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5409"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5409"
       }
     ]
   },
@@ -1319,72 +1319,72 @@
       {
         "heading": "Outgoing Medication History for Populations Request and Response",
         "description": "Performs\u00a0queries to get the medication dispense history for registries of patients to assist in tracking patients' medication adherence.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5256"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5256"
       },
       {
         "heading": "Incoming External Paid Pharmacy Claims Interface",
         "description": "Loads external paid pharmacy claims messages into Epic Payer Platform or Tapestry, Epic's managed care application, using flag files in the NCPDP Post-Adjudication format.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5367"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5367"
       },
       {
         "heading": "Outgoing Prescription Prior Authorization Request and Reponse",
         "description": "Supports message events necessary for a prescribing provider to request an electronic prior authorization for a medication order and receive either approval or denial from a Pharmacy Benefits Manager, and supports messages to cancel requests. These interfaces for electronic prior authorization support a subset of the NCPDP standard.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5224"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5224"
       },
       {
         "heading": "Outgoing Prescription Information from Prescriber to Pharmacies",
         "description": "Used for e-prescribing when the organization is the prescriber.  Uses NCPDP SCRIPT 10.6,2017071,2023011 to send new prescriptions, renewal responses, cancel requests, and change responses with an external pharmacy.  Previously known as Outgong Medication Orders to Retail Pharmacies.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5254"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5254"
       },
       {
         "heading": "Incoming Prescription Information from Pharmacies to Prescriber",
         "description": "Uses NCPDP SCRIPT 10.6 or 2017071 to receive renewal requests, cancel responses, and change requests from external pharmacies.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5254"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5254"
       },
       {
         "heading": "Outgoing Medication Dispense History Query",
         "description": "E-prescribing functionality when Epic is the prescriber. Uses NCPDP SCRIPT 10.6, 2017071,2023011 to receive medication history information from external sources.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=8009"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=8009"
       },
       {
         "heading": "Incoming Prescription Information from Prescribers to Pharmacy",
         "description": "Uses NCPDP SCRIPT to receive new prescriptions, renewal responses, and cancel requests from external providers into Epic's ambulatory pharmacy product.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5352"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5352"
       },
       {
         "heading": "Outgoing Prescription Information from Pharmacy to Prescribers",
         "description": "E-prescribing functionality when Epic is the Pharmacy.  Uses NCPDP SCRIPT 10.6,2017071,2023011 to send renewal requests and cancel responses to external providers from Willow Ambulatory.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5352"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5352"
       },
       {
         "heading": "Outgoing Pharmacy Update from Willow Ambulatory to E-Prescribing System Interface",
         "description": "Sends messages to an e-prescribing system to change e-prescribing related settings of an ambulatory pharmacy, such as service levels or operating mode.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FOutgoing%20Pharmacy%20Update%20Query%20Technical%20Specification.zip"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FOutgoing%20Pharmacy%20Update%20Query%20Technical%20Specification.zip"
       },
       {
         "heading": "Outgoing Provider Download to E-Prescribing System Interface",
         "description": "Queries an external e-prescribing system for current and updated e-prescribing provider data.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FProvider%20Query%20Technical%20Specification.zip"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FProvider%20Query%20Technical%20Specification.zip"
       },
       {
         "heading": "Outgoing Organization Download to E-Prescribing System",
         "description": "Queries an external e-prescribing system for current and updated e-prescribing pharmacy data.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FOutgoing%20Organization%20Query%20Interface%20Technical%20Specifications.zip"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FOutgoing%20Organization%20Query%20Interface%20Technical%20Specifications.zip"
       },
       {
         "heading": "Outgoing Provider Update to E-Prescribing System Interface",
         "description": "Sends messages to an e-prescribing system when changes to e-prescribing related settings are made to provider's record, such as service levels or contact information.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FOutgoing%20Provider%20Update%20Query%20Interface%20Technical%20Specification.zip"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FOutgoing%20Provider%20Update%20Query%20Interface%20Technical%20Specification.zip"
       },
       {
         "heading": "Outgoing Formulary Query to e-Prescribing System",
         "description": "Downloads NCPDP Formulary & Benefit files from an external source to provide formulary information to the provider during order entry.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%5COutgoing%20Medication%20Formulary%20Query%20to%20E-Prescribing%20System%20Technical%20Specification.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%5COutgoing%20Medication%20Formulary%20Query%20to%20E-Prescribing%20System%20Technical%20Specification.pdf"
       },
       {
         "heading": "Outgoing Pharmacy Benefit Claims Adjudication Query",
         "description": "This real-time interface is used to determine what portion of a prescription's cost will be paid by the patient's insurance so that the patient can be charged appropriately for the prescription fill. Claim Adjudication uses NCPDP Telecommunication version D.0.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5229"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5229"
       }
     ]
   },
@@ -1396,7 +1396,7 @@
       {
         "heading": "Incoming Healthcare Claim Repricing Request (X12 837)",
         "description": "Tapestry receives incoming claim repricing requests through ANSI ASC X12 837 transactions.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FTapestry%20Incoming%20Health%20Care%20Claim%20Repricing%20Request%20-%20837.zip"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FTapestry%20Incoming%20Health%20Care%20Claim%20Repricing%20Request%20-%20837.zip"
       },
       {
         "heading": "Incoming External Paid Medical Claims (X12 837)",
@@ -1406,22 +1406,22 @@
       {
         "heading": "Incoming Pharmacy Price Sales Catalog to Willow Inventory Interface",
         "description": "Updates purchase contract records with up-to-date pricing and supplier item ID information.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5337"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5337"
       },
       {
         "heading": "Outgoing Additional Information to Support a Health Care Services Authorization",
         "description": "Used in conjunction with an Outgoing Authorization Request for Review - 278R, provides supporting clinical documentation for the request. Follows ANSI X12 specification  005010X211, ANSI X12 275 for Authorization, Additional Information to Support a Health Care Services Review (275)",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FEpic%20005010X211%20Companion%20Guide.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FEpic%20005010X211%20Companion%20Guide.pdf"
       },
       {
         "heading": "Incoming Claim File Acknowledgment Interface \u2013 999",
         "description": "This incoming interface loads claim file acknowledgment responses using industry standard ANSI ASC X12N 999 transactions.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FResolute%20Incoming%20ANSI%20X12%20999%20Interface%20Specification.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FResolute%20Incoming%20ANSI%20X12%20999%20Interface%20Specification.pdf"
       },
       {
         "heading": "Outgoing Authorization Request as Notification (X12 278R)",
         "description": "Sends authorization decisions for covered patient referrals to third-party AP claims systems using the 278R format rather than 278N. Required by Texas Medicaid.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%5CTapestry%20ANSI%20X12%20278R%20Request%20as%20Notification%20Technical%20Specifications.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%5CTapestry%20ANSI%20X12%20278R%20Request%20as%20Notification%20Technical%20Specifications.pdf"
       },
       {
         "heading": "Tapestry Incoming Marketplace Benefit Enrollment and Maintenance",
@@ -1461,67 +1461,67 @@
       {
         "heading": "Outgoing Pharmacy Purchase Order from Willow Inventory",
         "description": "Sends medication purchase order requests to a supplier. The interface uses the ANSI X12 850 transaction set or GS1\u00a0for the request.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5261"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5261"
       },
       {
         "heading": "Incoming Pharmacy Purchase Order Invoice to Willow Inventory",
         "description": "Receives invoices from a supplier for purchase orders placed in Willow Inventory, Epic's medication inventory management system. The interface uses the ANSI X12 810 transaction set for the response.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5329"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5329"
       },
       {
         "heading": "Outgoing Healthcare Claim: Professional (X12 837 Batch)",
         "description": "Sends professional claim information to payers. The 837 transmits claim information either for the purpose of payment, such as a provider sending a bill to a payer, or for the purpose of reporting, such as a delegated risk payer sending payment information to a health plan or the government.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FTapestry%20Outgoing%20Health%20Care%20Data%20Reporting%20Claims.zip"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FTapestry%20Outgoing%20Health%20Care%20Data%20Reporting%20Claims.zip"
       },
       {
         "heading": "Incoming Healthcare Claim: Professional (X12 837)",
         "description": "Tapestry receives incoming professional, institutional, or dental claims through ANSI ASC X12 837 transactions. Standard version is batch with a real time option in upcoming version.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FTapestry%20Health%20Care%20Claims%20-%20Incoming%20837.zip"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FTapestry%20Health%20Care%20Claims%20-%20Incoming%20837.zip"
       },
       {
         "heading": "Outgoing Healthcare Claim Payment/Advice (X12 835)",
         "description": "Sends claim payment and remittance information to health care providers. The 835 lets providers know which claims are paid and whether there is any difference between the payment amount and the billed amount. This is a batch interface, with a real time option available in an upcoming version.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5157"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5157"
       },
       {
         "heading": "Incoming Benefit Enrollment and Maintenance (X12 834)",
         "description": "Receives enrollment information from employers or other sponsors of coverage. Health plans and employers send 834s to inform a payer about members who are being enrolled in the payer's insurance plan or for whom the payer is otherwise taking on risk.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5175"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5175"
       },
       {
         "heading": "Incoming Claim Status Inquiry (X12 276/277)",
         "description": "Receives requests from health care providers for status information about claims, including whether the claim was paid or unpaid and why. Tapestry supports the batch interface by default, with a real-time interface available. Returns response (X12 277).",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FTapestry%20Health%20Care%20Claim%20Status%20-%20Incoming%20276%20277.zip"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FTapestry%20Health%20Care%20Claim%20Status%20-%20Incoming%20276%20277.zip"
       },
       {
         "heading": "Incoming Payment Order/Remittance Advice (X12 820 Batch)",
         "description": "Receives payment and remittance information. Tapestry supports an incoming 820 for the purpose of posting payment information against premium billing accounts.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FTapestry%20ANSI%20X12%20820%20Interface%20Specification%20-%20Third%20Party%20Implementation%20Guide.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FTapestry%20ANSI%20X12%20820%20Interface%20Specification%20-%20Third%20Party%20Implementation%20Guide.pdf"
       },
       {
         "heading": "Outgoing Benefit Enrollment and Maintenance (X12 834)",
         "description": "Sends enrollment information to health plans, government agencies, or other entities. Payers send 834s for reporting purposes to list all members for whom they have taken on risk.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5167"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5167"
       },
       {
         "heading": "Incoming Eligibility Verification Query (X12 270/271)",
         "description": "Receives requests from health care providers for member eligibility and benefits information in the form of a 270, and sends a response in the form of a 271. This is a real-time interface.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FTapestry%20Eligibility%2C%20Coverage%2C%20or%20Benefit%20Inquiry%20-%20Incoming%20270%20271.zip"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FTapestry%20Eligibility%2C%20Coverage%2C%20or%20Benefit%20Inquiry%20-%20Incoming%20270%20271.zip"
       },
       {
         "heading": "Incoming Referral Request for Review (X12 278R)",
         "description": "Receives a referral request from a provider or provider group so that Epic's managed care system can perform utilization management and approve or deny the service request.  A response message is sent to inform the provider of the authorization decision.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FTapestry%20ANSI%20X12%20278R%20Request%20for%20Review%20Technical%20Specification.zip"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FTapestry%20ANSI%20X12%20278R%20Request%20for%20Review%20Technical%20Specification.zip"
       },
       {
         "heading": "Outgoing Unsolcited Healthcare Claim Pending Status Notification (X12 277P)",
         "description": "Sends information to a health care provider about the status of all non-finalized claims received from that provider. The 277P is an unsolicited message that is similar to the 277 response to the 276. It is sent so that the provider doesn't have to continually send 276 requests to the payer.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=%2Fstaged%2FTapestry%20ANSI%20X12%20Outgoing%20277P%20Interface%20Specification%20-%20Third%20Party%20Implementation%20Guide.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=%2Fstaged%2FTapestry%20ANSI%20X12%20Outgoing%20277P%20Interface%20Specification%20-%20Third%20Party%20Implementation%20Guide.pdf"
       },
       {
         "heading": "Incoming Authorization Notification (X12 278N)",
         "description": "Receives unsolicited, completed referral information (usually with authorization numbers) from an external utilization management system so that Epic' Managed Care system can pay Accounts Payable (AP) claims. Sends an acknowledgment of the receipt of the information (or errors if any occur during message processing).",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FTapestry%20ANSI%20X12%20278%20Incoming%20Notification%20Technical%20Specification.zip"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FTapestry%20ANSI%20X12%20278%20Incoming%20Notification%20Technical%20Specification.zip"
       },
       {
         "heading": "Tapestry Incoming Referral Transfer Attachment (X12 275)",
@@ -1531,112 +1531,112 @@
       {
         "heading": "Outgoing Eligibility Verification Query (X12 270/271)",
         "description": "Used to verify eligibility with clearinghouses and payers. Uses ANSI X12 270/271 transactions.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FOutgoing%20Eligibility%20Verification%20Query%20-%20270_271%20%28Bidirectional%29%20Interface%20Technical%20Specification.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FOutgoing%20Eligibility%20Verification%20Query%20-%20270_271%20%28Bidirectional%29%20Interface%20Technical%20Specification.pdf"
       },
       {
         "heading": "Outgoing Claims Status Request (X12 276/277)",
         "description": "Sends requests and receives responses from payers and intermediary systems about claim statuses using industry standard ANSI ASC X12N 276/277 transactions. Epic uses web services to send and receive the X12 messages.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FOutgoing%20Claims%20Status%20Request%20276_277.zip"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FOutgoing%20Claims%20Status%20Request%20276_277.zip"
       },
       {
         "heading": "Outgoing Authorization Request for Review and Response (X12 278R)",
         "description": "Transmits patient referral or authorization information to a third-party system. The referral/authorization information is sent in order to obtain authorization for health care services (such as specialty referrals and procedures) with clearing houses and payers. It uses ANSI X12 278 transactions.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5439"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5439"
       },
       {
         "heading": "Outgoing Pharmacy Benefit Eligibility Query - 270/271",
         "description": "E-Prescribing functionality when Epic is the Prescriber. Initiates pharmacy benefit eligibility queries.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5228"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5228"
       },
       {
         "heading": "Outgoing Admission Notification (X12 278)",
         "description": "Used to notify a payer or health plan about an admission for one of their covered a patients. The ANSI X12 278 transaction is used for both the original notification of the admission and the payer response that might follow. Such a response might contain the reference/authorization number to be sent later on the claim.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5300"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5300"
       },
       {
         "heading": "Outgoing Authorization Notification (X12 278N)",
         "description": "Sends authorization decisions for covered patient referrals to third-party AP claims systems. The response from the third-party AP claims system is the acknowledgement of the information received.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5172"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5172"
       },
       {
         "heading": "Incoming Purchase Order Acknowledgement to Willow Inventory",
         "description": "Receives acknowledgements from a supplier for purchase orders placed in Willow Inventory. The interface uses the ANSI X12 855 transaction set for the response.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5361"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5361"
       },
       {
         "heading": "Incoming Shipment Notification to Willow Inventory",
         "description": "Receives information about items sent by a supplier to fill a purchase order from Willow Inventory medication inventory management. This interface uses the ANSI X12 856 transaction set or European GS1.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5321"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5321"
       },
       {
         "heading": "Outgoing Health Care Claims for Institutional, Professional, and Dental Services",
         "description": "This outgoing batch interface sends insurance claim information to payers and intermediary systems using industry standard ANSI ASC X12N 837 transactions (institutional, professional and dental).",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5268"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5268"
       },
       {
         "heading": "Outgoing Health Care Data Reporting Claims",
         "description": "This outgoing batch interface sends insurance claim information to government and intermediary systems using the industry standard ANSI ASC X12N 837 data reporting transaction.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5156"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5156"
       },
       {
         "heading": "Rapid Retest",
         "description": "This bi-directional interface builds upon the use of standard Claim Reconciliation and sends individual claims to intermediary systems using industry standard ANSI ASC X12N 837 transactions (institutional, professional, and dental) and loads information about claim status back using industry standard ANSI ASC X12N 277CA transactions. This interface updates the status of errored claims in the system.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=6443"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=6443"
       },
       {
         "heading": "Incoming Health Care Claim Payment/Advice",
         "description": "This incoming batch interface posts insurance claim payment information received directly from payers and content aggregators, such as claims clearinghouses and banks, using standard ANSI ASC X12N 835 transactions.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5194"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5194"
       },
       {
         "heading": "Outgoing Health Care Claim Acknowledgement",
         "description": "This outgoing batch interface sends claim acknowledgement responses to incoming ANSI 837 files using ANSI ASC X12N 277CA transactions.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5174"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5174"
       },
       {
         "heading": "Tapestry Outgoing X12 Acknowledgment (X12 999)",
         "description": "This message is sent in response to incoming healthcare services messages. It acknowledges the receipt of the message and, if necessary, reports any formatting errors in the file. It is an ANSI ASC X12N 999 transaction.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5178"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5178"
       },
       {
         "heading": "Tapestry Outgoing Front-End Claim Status Acknowledgment (X12 277CA)",
         "description": "Tapestry Outgoing Front-End Claim Status Acknowledgment (X12 277CA).",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5177"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5177"
       },
       {
         "heading": "Incoming Marketplace Benefit Enrollment and Maintenance  (HIX 834)",
         "description": "Standard X12 format for loading marketplace information.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5176"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5176"
       },
       {
         "heading": "Incoming X12 HIX 820",
         "description": "Incoming Standard X12 format for loading Marketplace Premium Payment Information.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5161"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5161"
       },
       {
         "heading": "Tapestry Outgoing Marketplace Benefit Enrollment (X12 834)",
         "description": "Standard X12 format for sending out marketplace coverage information",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5170"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5170"
       },
       {
         "heading": "Outgoing Authorization Inquiry (X12 278I)",
         "description": "Provides the ability to inquire about the status of an existing authorization request. It uses ANSI X12 278 transactions and is used in conjunction with an Outgoing Authorization Request for Review - Outgoing Request (X12 278R) interface.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5440"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5440"
       },
       {
         "heading": "Incoming Claim Status Batch (X12 277)",
         "description": "This incoming batch interface loads information about claim acknowledgments using industry standard ANSI ASC X12N 277CA transactions. This interface can update the status of claims in the system and is able to load claim error information from payer and intermediary systems.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=9398"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=9398"
       },
       {
         "heading": "X12 278 Endpoint Specifications",
         "description": "Describes JSON Wrapped RESTful endpoint for sending and receiving X12 278 interface messages.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=8001"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=8001"
       },
       {
         "heading": "Payer Platform Outgoing Claims Status Request (X12 276/277)",
         "description": "Sends requests and receives responses from payers and intermediary systems about claim statuses using industry standard ANSI ASC X12N 276/277 transactions. Epic uses web services to send and receive the X12 messages.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=9924"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=9924"
       }
     ]
   },
@@ -1658,7 +1658,7 @@
       {
         "heading": "Outgoing Death Notification and Response",
         "description": "Sends notifications of patient death to the Population Register Centre in Finland.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=6097"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=6097"
       },
       {
         "heading": "Outgoing Provider Query",
@@ -1678,12 +1678,12 @@
       {
         "heading": "Outgoing QRDA Documents",
         "description": "Users can create QRDA Idocuments from data in their Epic EHR. Each QRDA I document is specific to one patient and contains data pertinent to quality measure reporting. Each QRDA III document includes aggregated quality measurement data for a provider or group of providers, including the quality measures they are reporting on and their performance rate. QRDA III documents are typically used by providers for quality measure submission. Many regulatory programs, including Meaningful Use, Core Measures, Inpatient Quality Reporting, ORYX Performance Measurement Reporting, and PQRS, accept QRDA documents to satisfy their quality reporting requirements.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5218"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5218"
       },
       {
         "heading": "Bidirectional Referrals",
         "description": "This pair of interfaces sends and receives referral and consultation requests, along with triage details and care summaries regarding those referrals.\u00a0These messages are structured according to the HL7-Finland PikaXML standard.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5807"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5807"
       },
       {
         "heading": "Outgoing Document Notification Interface - Finland",
@@ -1748,22 +1748,22 @@
       {
         "heading": "Outgoing Vaccination History Query Interface - Norway",
         "description": "Queries the SYSVAK vaccination registry, per  Norwegian SYSVAK specification . Each query requests historical immunization data for a given patient. This registry does not provide immunization recommendation data. The incoming portion of the interface does not directly update immunizations in the chart; the provider sees the response from the registry and decides what should be added to the patient record.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5203"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5203"
       },
       {
         "heading": "Outgoing Vaccination Administration Request and Response Interface - Norway",
         "description": "Sends information about vaccination administrations,  per the  Norwegian SYSVAK specification .",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5205"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5205"
       },
       {
         "heading": "Outgoing Sick Leave Interface - Norway",
         "description": "Sends information regarding a patient's ability to perform work in Norway, as specified by the Norwegian Labour and Welfare administration (NAV). Relevant information includes duration of impairment, cause of impairment, and other supporting information provided by the patient's provider.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5209"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5209"
       },
       {
         "heading": "Outgoing External Repricing Request Query (X12 837)",
         "description": "Epic's managed care system supports pricing claims in real-time by sending the 837 and receiving a response of a repriced 837 with HCP Segments.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FTapestry%20Real-time%20837%20External%20Pricing%20Implementation%20Guide.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FTapestry%20Real-time%20837%20External%20Pricing%20Implementation%20Guide.pdf"
       },
       {
         "heading": "Incoming Health Care Services Authorization Interface - Netherlands",
@@ -1773,7 +1773,7 @@
       {
         "heading": "Outgoing Birth Notification Interface - Norway",
         "description": "Sends notification of birth and receives back national identifier from the Norwegian citizen registry.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5294"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5294"
       },
       {
         "heading": "Outgoing Vaccination Codeset Update Request and Response Interface - Norway",
@@ -1793,37 +1793,37 @@
       {
         "heading": "Outgoing GP Patient List Subscription and Response",
         "description": "In Norway, a regional service (NAV) maintains a list of physicians (GPs) and the patients to whom they provide care.   This supports integration for providers to interact with NAVs service; notably, subscribing to their list (signing up for an updated list of patients to be sent monthly), ending their subscription to the monthly list, and checking the status of their subscription.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5269"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5269"
       },
       {
         "heading": "Outgoing ePrescribing Service Request and Response Interface - Norway",
         "description": "ePrescribing services with the national medication directory service (SFM)",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=8644"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=8644"
       },
       {
         "heading": "Incoming ePrescribing Service Notification Interface - Norway",
         "description": "ePrescribing services with the national medication directory service.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=8643"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=8643"
       },
       {
         "heading": "Incoming MDS CMS Validation Report",
         "description": "Takes the CMS MDS Validation Final Report flat file, parses the result of all of the MDS assessments in the report, and files the results of the validation back to Epic  The MDS Validation Final Report flat file is generated by CMS QIES and the specification for the report can be found in the CASPER Reporting User's Guide For MDS Providers. A full list of CMS error and warning codes (edits) can be found in section 5 of the MDS 3.0 Provider User's Guide.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5356"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5356"
       },
       {
         "heading": "Outgoing Vaccination Administration Request and Response - Australia",
         "description": "Sends information about vaccination administrations to the Australian Immunisation Register (AIR).  In an upcoming version, will also query AIR for immunization history.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=6076"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=6076"
       },
       {
         "heading": "Incoming Provider Communications Interface - Finland",
         "description": "Receives incoming summary of care if patient receives care out of home municipality.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5332"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5332"
       },
       {
         "heading": "Outgoing Provider Communications - Finland",
         "description": "Sends outgoing communication and summary of care for patients receiving care outside of home municipality.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=6087"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=6087"
       },
       {
         "heading": "Tapestry Incoming Bank Reconciliation",
@@ -1843,12 +1843,12 @@
       {
         "heading": "Incoming Drug Supply Chain Event Notification to Willow Inventory",
         "description": "Enables supply chain partners to capture event information about supply chain events and to share that information with their trading partners securely. \u00a0Uses the Electronic Product Code Information Service (EPCIS) GS1 standard and complies with the Drug Supply Change Security Act (DSCSA) regulation that requires organizations exchange package-level tracing information.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5373"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5373"
       },
       {
         "heading": "Outgoing Dialysis Updates to CMS",
         "description": "Sends Dialysis Data to CMS (by way of a Renal Healthcare HIE) from the Dialysis Module, per HIE specifications.  Requires Nephrology license.  Specifications are found   https://qnetconfluence.cms.gov/display/ELDF/Documentation+Repository",
-        "specLink": "https://open.epic.com/https://qnetconfluence.cms.gov/display/ELDF/Documentation+Repository"
+        "specLink": "https://qnetconfluence.cms.gov/display/ELDF/Documentation+Repository"
       },
       {
         "heading": "Outgoing eMultidose Patient Medication List Change Query",
@@ -1868,32 +1868,32 @@
       {
         "heading": "Incoming Scheduling Slot Availability Query",
         "description": "Receives requests from the United Kingdom's NHS e-Referral Service (also known as Choose and Book) to request appointment slots from Cadence, Epic's scheduling system.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5320"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5320"
       },
       {
         "heading": "Outgoing PDS Tracing Query",
         "description": "Outgoing PDS Tracing interface sends queries to the Personal Demographics Services (PDS) master index for National Health Service (NHS) patient records in the United Kingdom. PDS Trace Response messages are processed by the Incoming PDS Tracing interface. Message interactions follow HSCIC's Message Implementation Manual (MIM) version 7.2.02 and External Interface Specification 11.6. This interface uses messages expressed in XML encoding syntax.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5231"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5231"
       },
       {
         "heading": "Outgoing PDS Demographics Synchronisation Query",
         "description": "Outgoing PDS Synchronisation interface sends queries for demographics and demographic updates to the Personal Demographics Services (PDS) master index for National Health Service (NHS) patient records in the United Kingdom. PDS Synchronisation Response messages are processed by the Incoming PDS Synchronisation interface. Message interactions follow HSCIC's Message Implementation Manual (MIM) version 7.2.02 and External Interface Specification 11.6. This interface uses messages expressed in XML encoding syntax.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FOutgoing%20PDS%20Demographics%20Synchronisation%20-%20UK%20Interface%20Technical%20Specification.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FOutgoing%20PDS%20Demographics%20Synchronisation%20-%20UK%20Interface%20Technical%20Specification.pdf"
       },
       {
         "heading": "Outgoing PDS NHS Number Allocation Request for Acute Care",
         "description": "Sends requests to the Personal Demographics Services (PDS) to generate a new National Health Service (NHS) number for an adult patient in an acute care setting in the United Kingdom. PDS NHS Number Response messages are processed by the Incoming PDS NHS Number Allocation interface. Message interactions follow HSCIC's Message Implementation Manual (MIM) version 6.3.01 and External Interface Specification 11.6. This interface uses messages expressed in XML encoding syntax.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5232"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5232"
       },
       {
         "heading": "Outgoing PDS Newborn Notification",
         "description": "Sends requests to the Personal Demographics Services (PDS) to generate a new National Health Service (NHS) number for a newborn delivery documented in Stork within the United Kingdom. PDS Create Initial Record Response messages are processed by the Incoming PDS Create Initial Record Response interface. Message interactions follow HSCIC's Message Implementation Manual (MIM) version 7.2.02 and External Interface Specification 11.6. This interface uses messages expressed in XML encoding syntax.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5233"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5233"
       },
       {
         "heading": "Outgoing Medication Orders",
         "description": "Sends outgoing e-prescribed medication orders, following Dutch HL7 v3 Standards (MP6).",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=6433"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=6433"
       },
       {
         "heading": "Outgoing Medication Dispense History Query",
@@ -1903,12 +1903,12 @@
       {
         "heading": "Outgoing Medication Orders",
         "description": "Sends ambulatory medication orders that are placed in Order Entry to the National Electronic Health Record (NEHR) in the format required by the NEHR putOrderedMedications service. This interface uses the XML message format.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=8005"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=8005"
       },
       {
         "heading": "Outgoing Medication Dispenses",
         "description": "Sends outpatient medication dispenses to the National Electronic Health Record (NEHR) in the format required by the NEHR putDispensedMedications service. Messages are sent whenever an outpatient medication dispense is received from an internal pharmacy system through an Incoming Medication Orders to EpicCare Ambulatory interface. This interface uses the XML message format.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=8004"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=8004"
       },
       {
         "heading": "Outgoing Laboratory Results",
@@ -1938,7 +1938,7 @@
       {
         "heading": "Outgoing Health Care Claim Grouper and Pricer",
         "description": "Bidirectional interface that analyzes claims to determine which codes and prices are appropriate, and can work with various external systems.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=staged%2FHealth%20Care%20Claim%20Grouper%20and%20Pricer%20-%20Outgoing.pdf"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=staged%2FHealth%20Care%20Claim%20Grouper%20and%20Pricer%20-%20Outgoing.pdf"
       },
       {
         "heading": "Outgoing Municipality Integrations",
@@ -1948,7 +1948,7 @@
       {
         "heading": "Bidirectional Correspondence",
         "description": "Sends and receives patient-centric clinical correspondence messages to external parties, including other hospitals, general practitioners, and municipal systems. These messages are used for ad hoc communication to convey additional information beyond what is included in other specifications.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5437"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5437"
       },
       {
         "heading": "Outgoing Newborn CPR Assignment Request and Response",
@@ -1993,12 +1993,12 @@
       {
         "heading": "Outgoing Procedure Log Data",
         "description": "Sends data for configured case tracking events from a Cupid procedure log case for the purpose of submitting data to external registries. Submissions to the NCDR CathPCI & NCDR ICD registries can be sent directly from Cupid, Epic's CVIS. The messages contain data on the case including panels, staff, timeouts, implants, equipment, radiation, verifications, flowsheets, events, medications, and labs.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5222"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5222"
       },
       {
         "heading": "Incoming Referral Scheduling Request Query",
         "description": "Receives requests from the United Kingdom's NHS e-Referral Service (also known as Choose and Book) to book an appointment in Cadence, Epic's scheduling system.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5325"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5325"
       },
       {
         "heading": "Incoming Summary of Care Interface",
@@ -2013,7 +2013,7 @@
       {
         "heading": "Outgoing PAS Data and Response Interface",
         "description": "Sends patient, referral, administrative pathway, and encounter data grouped by patient episode to the Victorian Integrated Non-Admitted Health (VINAH) database, which is run by the State of Victoria Department of Health & Human Services in Australia. Additionally, this interface receives asynchronous acknowledgments and error information from VINAH. This interface uses messages expressed in XML encoding syntax.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5244"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5244"
       },
       {
         "heading": "Data Exchange with 3M Core Grouping Software or Grouper Plus Content Services",
@@ -2023,17 +2023,17 @@
       {
         "heading": "Outgoing FMK Medication Card Services Request and Response",
         "description": "Manages the following interactions between Epic and the Danish medication database Falles Medicinkort (FMK): Filing medication lists for patients into Epic; pushing medication changes from Epic to the national database; and setting the reviewed status of the medication list by a clinician.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=6551"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=6551"
       },
       {
         "heading": "Outgoing Medication Orders to Prescription Exchange Service",
         "description": "Sends medication orders and receives acknowledgements from a prescription exchange service (the currently supported service is eRx). When clinicians create, cancel, or amend medication orders, this XML interface relays the ePrescription information to eRx, which forwards the medication information to the appropriate dispensing facility. This interface uses the XML message format.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5252"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5252"
       },
       {
         "heading": "Outgoing Birth Notification Interface",
         "description": "Sends a report to register newborns in the municipal child care system and begin coordination of home visits by municipal pediatric nursing after discharge.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5293"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5293"
       },
       {
         "heading": "Outgoing ECPR Assignment Request and Response",
@@ -2053,17 +2053,17 @@
       {
         "heading": "Outgoing Prescription Prior Authorization Request and Response",
         "description": "Submits prior authorization requests to the DHPO and HAAD post office. This interface uses the HAAD XML standard.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=8007"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=8007"
       },
       {
         "heading": "Outgoing Claim Submission from Willow Ambulatory",
         "description": "Submits claims to the DHPO and HAAD post office. This interface uses the HAAD XML standard.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=8008"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=8008"
       },
       {
         "heading": "Incoming Remittance Advice Download to Willow Ambulatory",
         "description": "Downloads remittance advices that are stored in HAAD post office using a batch job. This interface uses the HAAD XML standard.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=8008"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=8008"
       },
       {
         "heading": "Outgoing COV Verification Query",
@@ -2073,22 +2073,22 @@
       {
         "heading": "Outgoing IHI Verification Query",
         "description": "Queries the Australian Healthcare Identifiers (HI) Service to retrieve and validate a patient's Individual Healthcare Identifier (IHI) Number. The main goal of this query is to allow modules such as Care Everywhere to interact with My Health Record, which requires valid IHI Numbers for patients when uploading documents.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5266"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5266"
       },
       {
         "heading": "Outgoing Perinatal Data",
         "description": "Submits summary reports at the end of each pregnancy to Perined, a national registry in the Netherlands that records obstetric data. This interface uses the XML HL7 NL standard.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5230"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5230"
       },
       {
         "heading": "Outgoing Initial Public Health Case Report (eICR)",
         "description": "Satisfies the Meaningful Use objective to send Electronic Case Reports to public health agencies using the HL7 Clinical Document - Electronic Initial Case Report (CDA-eICR) format.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5263"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5263"
       },
       {
         "heading": "Outgoing FMK Ordered Refill Request and Response",
         "description": "Sends refill requests to the Danish medication database F\u00e6lles Medicinkort (FMK) for a patient or an entire facility.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=6435"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=6435"
       },
       {
         "heading": "Outgoing eRx Services Request and Response",
@@ -2098,7 +2098,7 @@
       {
         "heading": "Outgoing Prescription Upload Request and Response",
         "description": "Submits a prescription to the UAE Post Office hub for authorization.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=8006"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=8006"
       },
       {
         "heading": "Outgoing Prescription Download Request and Response",
@@ -2108,77 +2108,77 @@
       {
         "heading": "HL7 InfoButton",
         "description": "The Active Guidelines (AGL) activity in the Epic EHR uses the HL7 InfoButton standard to allow clinicians to retrieve targeted information provided by third parties, specific to the context of the patient or clinical workflow. Rather than searching third party knowledge base, searches are performed automatically based off elements of the patient's chart like diagnoses or orders.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5312"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5312"
       },
       {
         "heading": "Mobile App Integration",
         "description": "Epic's mobile applications - Haiku, Canto, and Rover - can communicate with specialized clinical review applications like document or image viewers.  This framework allows our applications to launch your app with context, making for a a smooth and seamless clinical experience for the user.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5309"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5309"
       },
       {
         "heading": "Clinical Context Manager Integration",
         "description": "CCOW (formerly known as Clinical Context Object Workgroup) is a vendor-independent HL7 standard protocol designed to allow disparate clinical applications to synchronize data in real-time at the point of care. Epic can integrate as a participant with a third-party clinical context manager.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5434"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5434"
       },
       {
         "heading": "Patient Portal Links",
         "description": "Epic's patient portal can link to other patient-specific websites through functionality known as Dynamic Links. Dynamic Links are used to launch external websites from within the portal. The link can be configured to pass context about the patient through query string parameters, optionally encrypted using AES.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5187"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5187"
       },
       {
         "heading": "Cash Management",
         "description": "This incoming batch interface creates a record of deposits for cash reconciliation using a configurable flat file format. The flat file is configurable and the preferred format is in the linked specification, however Epic can also support industry standard formats such as CCD+.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5411"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5411"
       },
       {
         "heading": "Incoming Claim Status Batch (Flat File)",
         "description": "This incoming batch interface loads information about claim status through a configurable flat file. This interface can update the status of claims in the system and is able to load claim error information from payer and intermediary systems. The flat file format is configurable, but the common specification is pre-configured in the Foundation System for Epic customers and widely used with success.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5428"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5428"
       },
       {
         "heading": "Incoming Self-pay Payments",
         "description": "This incoming batch interface posts self-pay and bad debt payments in a configurable flat file format. The flat file format is configurable, but the above common specification is pre-configured in the Foundation System for Epic customers and widely used with success.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5410"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5410"
       },
       {
         "heading": "Monthly Premium Withholding Report (MPWR)",
         "description": "Transmits premium information to Medicare Advantage plans.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5159"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5159"
       },
       {
         "heading": "Outgoing 1095-B (Simple)",
         "description": "The 1095-B is a flat file for tax information.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5303"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5303"
       },
       {
         "heading": "Outgoing 1099-MISC",
         "description": "The 1099-MISC tax form is used to report miscellaneous income for Vendors from an AP Cycle processing.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5302"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5302"
       },
       {
         "heading": "Batch Eligibility Query (BEQ)",
         "description": "Outbound BEQ request and Incoming BEQ response. BEQ is a way for plans to submit batches of individuals for verification of various eligibilities.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5438"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5438"
       },
       {
         "heading": "Outbound Medicare Advantage and Prescription Drug System (MARx) files",
         "description": "File for reporting drug information between a health plan and CMS.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5306"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5306"
       },
       {
         "heading": "Tapestry Document Linker DMS Integration",
         "description": "We recommend using  the Hyperdrive Document Linker  instead of this technology. This VB integration enables users in an external document management system to launch the Tapestry Document Linker activity in an active Hyperspace session and pass necessary document information to link a document to records in Epic. Additionally the integration can allow for users in the DMS to create new claim and CRM records in Hyperspace with links to the desired document.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5310"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5310"
       },
       {
         "heading": "Collections Extract and Import",
         "description": "Epic can generate a flat file extract to collections agencies containing information about charges assigned to the agency. Epic can also receive flat file imports with updates to those charges to support tracking of payments and changes to charges in Resolute.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5429"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5429"
       },
       {
         "heading": "SAML 2.0 Idp-initiated Single Sign-On (SSO)",
         "description": "Epic supports launching an external app with SAML 2.0. The SAML 2.0 Identity Provider initiated workflow initiates from Epic, playing the SAML role of Identity Provider. Implementation requires the exchange of an x509 certificate, which is used to sign the SAML claims. This process follows the OASIS SAML 2.0 specification. Epic recommends the use of  SMART on FHIR  over SAML if possible.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5187"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5187"
       },
       {
         "heading": "Single Sign-On (SSO) into MyChart",
@@ -2188,32 +2188,32 @@
       {
         "heading": "Single Sign-On (SSO) into EpicCare Link",
         "description": "Other systems can provide SSO integration into Epic's web application, EpicCare Link, by passing user and optionally patient context.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5407"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5407"
       },
       {
         "heading": "Appointment Notifications",
         "description": "Interactive Voice Response systems can be used to deliver appointment reminders to patients prior to their visits, asking them to confirm. Once the appointment is confirmed, the IVR system sends this information back to the Epic EHR so clinic staff can estimate no-show probabilities.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5416"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5416"
       },
       {
         "heading": "Recall Notifications",
         "description": "Interactive Voice Response systems can be used to remind patients to schedule appointments for upcoming recalls. Once the communication happens, the IVR system sends this information back to the Epic EHR to finish the documentation.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5414"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5414"
       },
       {
         "heading": "Request Notifications",
         "description": "Interactive Voice Response systems can be used to remind patients to schedule appointments for upcoming appointment requests. Once the communication happens, the IVR system sends this information back to the Epic EHR to finish the documentation.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5415"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5415"
       },
       {
         "heading": "Incoming Receipts",
         "description": "Receives receipts for messages sent to the VANS network in relation to the Medcom message sent.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5327"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5327"
       },
       {
         "heading": "Outgoing Receipts",
         "description": "Sends positive or negative receipt messages for Medcom messages received from the VANS network using the Medcom XML/EDIFACT standard.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5217"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5217"
       },
       {
         "heading": "eMediplan APIs",
@@ -2223,52 +2223,52 @@
       {
         "heading": "Incoming External Clinical Data",
         "description": "As organizations extend Epic to affiliated practices in their communities, there has been an increasing need to convert historical patient-level data from other vendors' systems into Epic.   We recommend and very strongly prefer converting data using any of our other standards based integration options, such as from a CCDA.  This is a limited import tool that allows organizations to load patient-level data from organizations that do not otherwise support standards-based data exchange.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5370"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5370"
       },
       {
         "heading": "Paid Claims Import",
         "description": "Paid claim data can be imported into Epic to support population health and care management workflows by reconciling the data with the rest of the comprehensive medical record. These formats are recommended when the data can be manipulated or the extract is flexible, to simplify the process of importing into Epic.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=9495"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=9495"
       },
       {
         "heading": "EDManager",
         "description": "This set of APIs allow external applications that are running alongside Epic Hyperspace to programmatically take certain actions, such as logging in/out and launching activities. They also provide the ability to query Epic Hyperspace for information, as well as to be notified when key events occur. These APIs are commonly used for automating external-driven workflows, most notably logins.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5419"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5419"
       },
       {
         "heading": "Desktop Generic Authentication",
         "description": "This interface allows external authentication software to implement authentication devices for use in Epic. The external authentication software can write installable devices that can be configured for use as devices to authenticate a user for login into Epic, to re-authenticate the user after login (for example, to sign off on medications), or to identify a patient (for example, to check into an appointment).",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5421"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5421"
       },
       {
         "heading": "Scan Acquisition",
         "description": "This COM integration enables users to seamlessly launch an external scan acquisition interface from Epic. Epic can pass the user's active context information, such as the patient, encounter, or order.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5191"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5191"
       },
       {
         "heading": "Scan Viewing",
         "description": "This COM integration enables Epic to display an ActiveX scan viewing control in a modeless floating window.\u00a0The user can interact with both the viewer and Epic, and Epic will manage closing the window if the user's patient context changes.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5190"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5190"
       },
       {
         "heading": "EPS Document Retrieval Plugin",
         "description": "This .NET integration enables Epic print services (EPS) to query a document management system (DMS) for images or documents to insert into a print job. This is useful when you want a scan to be stored in your DMS, but want to include that scan in something you print. We recommend new implementations use the  EPS Document Retrieval Web Service  instead of this.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5406"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5406"
       },
       {
         "heading": "SIEM Feed",
         "description": "Epic can feed certain security and privacy relevant events to a security information and event management (SIEM) system in near real-time.\u00a0 Messages coming from Epic can be formatted using Common Event Framework (CEF), Log Event Extended Format (LEEF), or RFC 5424 syslog.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5188"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5188"
       },
       {
         "heading": "Epic Access Logging",
         "description": "The Epic Access Logging extract script extracts key Epic event logging data, including patient, user, and encounter information, from the Epic organization\u2019s Clarity database into a pipe delimited flat file.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5417"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5417"
       },
       {
         "heading": "Speech Recognition (Classic VB Client)",
         "description": "This set of APIs allow speech recognition systems to integrate with Epic Hyperspace (Classic VB Client). \u00a0The speech recognition system can receive information about and make changes to the content of a control. 99% of customers are no longer using this client.  For current specifications, see  Hyperdrive Speech Recognition .",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5311"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5311"
       },
       {
         "heading": "Computable Exports",
@@ -2278,77 +2278,77 @@
       {
         "heading": "Welcome Accessibility for Vendors",
         "description": "Welcome is Epic\u2019s application for patient self-service arrivals using kiosk enclosures or free-roaming tablets. This guide is intended for vendors supplying Welcome hardware and software solutions and provides an overview of some considerations associated with supporting an accessible patient workflow on those form factors",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5153"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5153"
       },
       {
         "heading": "Welcome Hardware Guide For Vendors",
         "description": "Welcome is Epic\u2019s application for patient self-service arrivals using kiosk enclosures or free-roaming tablets. This guide is intended for vendors supplying Welcome hardware solutions and provides an in-depth guide to the integration considerations soliciting organizations may have when requesting hardware.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=5757"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=5757"
       },
       {
         "heading": "PB Statement Form 807",
         "description": "Epic can generate a delimited plain text file of information that can be shared with a statement vendor. This file includes information about the patient and their Professional Billing balances in Epic. File format subject to change - fields and segments may be added or removed with future development. Programming should accept or ignore additional fields and segments when they occur gracefully.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=6101"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=6101"
       },
       {
         "heading": "SBO Statement Form 808",
         "description": "Epic can generate a delimited plain text file of information that can be shared with a statement vendor. This file includes information about the patient and their Enterprise billing balances in Epic. File format subject to change - fields and segments may be added or removed with future development. Programming should accept or ignore additional fields and segments when they occur gracefully.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=6440"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=6440"
       },
       {
         "heading": "Active Guidelines",
         "description": "The Active Guidelines (AGL) activity gives clinicians a convenient way to access web applications without leaving the Epic application. A web app can either be launched as the result of a user interacting with a response from a decision support web service or, depending upon health system configuration, by a user specifically choosing to navigate to the application from various activities or items. The web application is embedded within a sandboxed iframe in the Epic Hyperspace desktop application and can communicate with the EHR through cross-domain web messaging.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=6476"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=6476"
       },
       {
         "heading": "Kiosk Generic Authentication",
         "description": "Allows external authentication software to implement authentication devices for use in Epic\u2019s self-arrival kiosk software. The external authentication software can write installable devices that can be configured to identify a patient or to enroll a patient for future identifications.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=7517"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=7517"
       },
       {
         "heading": "OpenID Connect",
         "description": "Epic\u2019s Hyperspace application now supports the OpenID Connect (OIDC) authorization code flow as a means of authenticating users for logging in to Hyperspace as well as authentication within Hyperspace workflows.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=7988"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=7988"
       },
       {
         "heading": "Translation of Patient-Facing Content",
         "description": "Outlines the file format expectations for translation of patient-facing content which can show up in MyChart and other areas of our patient-facing software.  Not all workflows that are patient-facing are currently included in this file format.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=8706"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=8706"
       },
       {
         "heading": "Care Gaps Import",
         "description": "Care gaps data can be imported into Epic to support population health and care management workflows. Imported quality measure outcomes can be used to drive patient outreach, enhance during-encounter decision support, and summarize measure performance for your patient populations. This format is recommended when the data can be manipulated, or the extract is flexible, to simplify the process of importing into Epic.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=8737"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=8737"
       },
       {
         "heading": "Bluetooth\u00ae Generic Health Sensor Device Integration with MyChart",
         "description": "The Generic Health Sensor (GHS) Profile is a Bluetooth\u00ae standard for communicating health-related observations from personal health devices. This specification describes how devices that support the GHS Profile can integrate with MyChart to file patient data.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=9421"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=9421"
       },
       {
         "heading": "Risk Adjustment Import",
         "description": "Risk Adjustment data can be imported into Epic to support population health and care management workflows by providing condition categories and suspected conditions. This format is recommended when the data can be manipulated or the extract is flexible, to simplify the process of importing into Epic.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=9494"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=9494"
       },
       {
         "heading": "Supplemental Data Import",
         "description": "Supplemental data can be imported into Epic to support population health and care management workflows by providing additional clinical data to include in HEDIS\u2122 quality reporting. This format is recommended when the data can be manipulated or the extract is flexible, to simplify the process of importing into Epic.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=9493"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=9493"
       },
       {
         "heading": "Verified Safety Checks",
         "description": "Documentation to assist BLE wristband vendors in supporting Epic Verified Safety Checks for inpatient behavioral health units.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=9773"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=9773"
       },
       {
         "heading": "Bluetooth Wayfinding",
         "description": "Enables a web-based application embedded within MyChart Mobile to request and receive Bluetooth signals, data, and beacon information from the containing app to support indoor blue-dot wayfinding experiences.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=9921"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=9921"
       },
       {
         "heading": "Prospective Patient Import",
         "description": "Prospective Patient data can be imported into or exported out of Epic to support maintaining a unified view of prospective and current patients, enabling more effective outreach, patient matching, and reporting. This is a spreadsheet-based import/export tool that allows organizations to load prospective patient data from third-party systems.",
-        "specLink": "https://open.epic.com//Tech/TechSpec?spec=10311"
+        "specLink": "https://open.epic.com/Tech/TechSpec?spec=10311"
       }
     ]
   }

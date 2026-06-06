@@ -1,3 +1,5 @@
+from urllib.parse import urljoin, urlparse, urlunparse
+
 from bs4 import BeautifulSoup
 
 from utils import (
@@ -26,7 +28,7 @@ def getAllInterfaceTypes() -> list[str]:
 
 
 def parseAPISection(interfaceType: str) -> dict:
-    url = f"{getBaseURL()}/Interface/{interfaceType}"
+    url = urljoin(getBaseURL(), f"/Interface/{interfaceType}")
     content = getHTMLContent(url)
     soup = BeautifulSoup(content, "html.parser")
 
@@ -60,7 +62,15 @@ def parseAPISection(interfaceType: str) -> dict:
             anchor = h3.find("a")
             if anchor:
                 specRelativeLink = anchor.get("href")
-                specLink = f"{getBaseURL()}/{specRelativeLink}"
+                if specRelativeLink and specRelativeLink != "#":
+                    # Join base URL and relative link safely
+                    specLink = urljoin(getBaseURL(), specRelativeLink)
+                    # Clean double slashes in path (except protocol separator)
+                    parsed = urlparse(specLink)
+                    path = parsed.path
+                    while "//" in path:
+                        path = path.replace("//", "/")
+                    specLink = urlunparse(parsed._replace(path=path))
                 specLinkText = anchor.text.strip()
 
             # prepare the heading
