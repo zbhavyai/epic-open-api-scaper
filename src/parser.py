@@ -1,8 +1,14 @@
-from pathlib import Path
-
 from bs4 import BeautifulSoup
 
-from utils import getBaseURL, getHTMLContent, logger, readDataJSON, storeDataJSON
+from utils import (
+    HTML_OUTPUT_PATH,
+    JSON_OUTPUT_PATH,
+    getBaseURL,
+    getHTMLContent,
+    logger,
+    readDataJSON,
+    storeDataJSON,
+)
 
 
 def getAllInterfaceTypes() -> list[str]:
@@ -84,9 +90,9 @@ def parseAPISection(interfaceType: str) -> dict:
     }
 
 
-def generateSingleHTML(input_path: Path, output_path: Path) -> None:
-    logger.info(f"Reading parsed data from {input_path}")
-    savedData = readDataJSON(input_path)
+def generateHTML() -> None:
+    logger.info(f"Reading parsed data from {JSON_OUTPUT_PATH}")
+    savedData = readDataJSON(JSON_OUTPUT_PATH)
 
     html = "<html><body>"
 
@@ -115,13 +121,13 @@ def generateSingleHTML(input_path: Path, output_path: Path) -> None:
 
     html += "</body></html>"
 
-    logger.info(f"Generating HTML report at {output_path}")
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    with output_path.open("w") as f:
+    logger.info(f"Generating HTML report at {HTML_OUTPUT_PATH}")
+    HTML_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with HTML_OUTPUT_PATH.open("w") as f:
         f.write(html)
 
 
-def beginParse(output_file: Path) -> None:
+def beginParse() -> None:
     allResults = []
     interfaceTypes = getAllInterfaceTypes()
 
@@ -133,5 +139,5 @@ def beginParse(output_file: Path) -> None:
         except Exception as e:
             logger.error(f"Error parsing interface type {interfaceType}: {e}")
 
-    logger.info(f"Writing parsed results as JSON to {output_file}")
-    storeDataJSON(allResults, output_file)
+    logger.info(f"Writing parsed results as JSON to {JSON_OUTPUT_PATH}")
+    storeDataJSON(allResults, JSON_OUTPUT_PATH)

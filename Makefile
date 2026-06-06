@@ -1,4 +1,4 @@
-.PHONY: init update format lint parse generate
+.PHONY: init update format lint run
 
 help:
 	@uv run python src/scraper.py --help
@@ -18,8 +18,6 @@ lint:
 	@uv run ruff check --quiet --force-exclude -- src
 	@uv run mypy --pretty -- src
 
-parse:
-	@uv run python src/scraper.py parse
+run:
+	@uv run python src/scraper.py
 
-generate:
-	@uv run python src/scraper.py generate
